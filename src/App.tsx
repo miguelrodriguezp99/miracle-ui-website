@@ -1,10 +1,23 @@
-import Navbar from "./components/Navbar/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/home/Home";
+import { components } from "./lib/utils";
+import { Accordion } from "./pages/components/accordion/Accordion";
 
 function App() {
+  const componentArray = Object.values(components);
+
   return (
     <>
-      <Navbar />
-      <div className="text-white">hi</div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {componentArray.map((component, index) => (
+          <Route
+            key={index}
+            path={`/components/${component.title}`}
+            element={<Accordion />}
+          />
+        ))}
+      </Routes>
     </>
   );
 }
