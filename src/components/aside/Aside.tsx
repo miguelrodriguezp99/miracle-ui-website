@@ -5,7 +5,7 @@ export default function Aside() {
   const componentArray = Object.values(components);
 
   return (
-    <aside className="z-30 h-[calc(100vh-3.5rem)] shrink-0 py-6">
+    <aside className="hidden md:block z-30 h-[calc(100vh-3.5rem)] shrink-0 py-8">
       <div className="flex flex-col pb-4">
         <p className="text-pwhite mb-1 py-1 px-2 font-bold">Getting started</p>
         <Anchor underlined props="py-1 px-2">

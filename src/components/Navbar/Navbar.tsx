@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="flex gap-5">
           <div className="text-pwhite text-[16px] font-bold">Miracle UI</div>
           <Anchor>Docs</Anchor>
-          <Anchor>Components</Anchor>
+          <Anchor route="/components/Accordion">Components</Anchor>
           <Anchor>Examples</Anchor>
           <Anchor>Colors</Anchor>
         </div>

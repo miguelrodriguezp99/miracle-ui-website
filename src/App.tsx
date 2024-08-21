@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import { components } from "./lib/utils";
-import { Accordion } from "./pages/components/accordion/Accordion";
 
 function App() {
   const componentArray = Object.values(components);
@@ -14,7 +13,7 @@ function App() {
           <Route
             key={index}
             path={`/components/${component.title}`}
-            element={<Accordion />}
+            element={<component.page />}
           />
         ))}
       </Routes>
