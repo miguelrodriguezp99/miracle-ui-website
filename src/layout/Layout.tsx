@@ -8,7 +8,7 @@ type LayoutProps = {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="bg-background font-geist text-sm">
+    <div className="bg-white dark:bg-background font-geist text-sm">
       <Navbar />
       <div className="mx-auto px-8">
         <div

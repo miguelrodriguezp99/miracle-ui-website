@@ -25,7 +25,11 @@ export default function Anchor({ children, underlined, props, route }: Props) {
     <a
       onClick={handleClick}
       className={`cursor-pointer transition-color duration-300 
-        ${isActive ? "text-pwhite" : "text-pwhite/60 hover:text-pwhite/80"}
+        ${
+          isActive
+            ? "text-pblack dark:text-pwhite"
+            : "text-pblack/60 hover:text-pblack/80 dark:text-pwhite/60 dark:hover:text-pwhite/80"
+        }
         ${underlined && "hover:underline"}
         ${props}
         `}

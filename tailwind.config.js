@@ -11,6 +11,7 @@ export default {
         background: "#09090b",
         pwhite: "#FAFAFA",
         swhite: "#A1A1AA",
+        pblack: "#09090B",
       },
     },
   },

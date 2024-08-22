@@ -1,5 +1,4 @@
-import { Clipboard } from "@miracle-ui/clipboard";
-import { Tab, Tabs } from "@miracle-ui/tabs";
+import { Clipboard, Tab, Tabs } from "@miracle-ui/react";
 import { CopyBlock, tomorrowNight } from "react-code-blocks";
 
 type Example = {
@@ -20,7 +19,7 @@ export default function ComponentLayout({
 }: Props) {
   return (
     <>
-      <div className="text-pwhite">
+      <div className="text-black dark:text-pwhite">
         <div>
           <div className="space-y-2">
             <p className="text-3xl font-bold">{title}</p>
@@ -31,7 +30,7 @@ export default function ComponentLayout({
             <button>API Reference</button>
           </div>
 
-          <div className="h-[0.5px] bg-pwhite/30 my-8"></div>
+          <div className="h-[0.5px] bg-black/30 dark:bg-pwhite/30 my-8"></div>
 
           <section>
             <p className="text-3xl font-bold">Installation</p>
@@ -69,7 +68,7 @@ export default function ComponentLayout({
               <p className="px-3 py-4">
                 The above command is for individual installation only. You may
                 skip this step if
-                <span className="bg-[#2a2d30] px-2 py-1 rounded-[4px] ml-1 mr-1">
+                <span className="bg-gray-500 dark:bg-[#2a2d30] px-2 py-1 rounded-[4px] ml-1 mr-1">
                   @nextui-org/react
                 </span>
                 is already installed globally.
@@ -77,7 +76,7 @@ export default function ComponentLayout({
             </div>
           </section>
 
-          <div className="h-[0.5px] bg-pwhite/30 my-8"></div>
+          <div className="h-[0.5px] bg-black/30 dark:bg-pwhite/30 my-8"></div>
 
           <section>
             <p className="text-3xl font-bold mt-8">Usage</p>
@@ -87,7 +86,7 @@ export default function ComponentLayout({
                   <Tabs variant="underlined">
                     <Tab title="Preview">
                       <div
-                        className="ml-3 border border-1 border-pwhite/20 rounded-md px-6 py-5 mt-5
+                        className="ml-3 border border-1 border-black/20 dark:border-pwhite/20 rounded-md px-6 py-5 mt-5
                         flex align-middle justify-center "
                       >
                         {example.component}
@@ -123,13 +122,13 @@ export default function ComponentLayout({
           </section>
         </div>
       </div>
-      <div className="hidden text-sm xl:block text-pwhite">
+      <div className="hidden text-sm xl:block text-pblack dark:text-pwhite">
         <p>On this page</p>
         <ul>
-          <li className="pt-2 text-pwhite/60 hover:text-pwhite cursor-pointer transition-colors duration-300">
+          <li className="pt-2 text-pblack/60 hover:text-pblack dark:text-pwhite/60 dark:hover:text-pwhite cursor-pointer transition-colors duration-300">
             Installation
           </li>
-          <li className="pt-2 text-pwhite/60 hover:text-pwhite cursor-pointer transition-colors duration-300">
+          <li className="pt-2 text-pblack/60 hover:text-pblack dark:text-pwhite/60 dark:hover:text-pwhite cursor-pointer transition-colors duration-300">
             Usage
           </li>
         </ul>

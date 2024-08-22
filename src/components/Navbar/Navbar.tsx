@@ -6,7 +6,9 @@ export default function Navbar() {
     <nav className="flex items-center justify-center sticky top-0 z-50 backdrop-blur">
       <header className="flex w-[1550px] px-14 justify-between items-center h-14">
         <div className="flex gap-5">
-          <div className="text-pwhite text-[16px] font-bold">Miracle UI</div>
+          <div className="text-pblack dark:text-pwhite text-[16px] font-bold">
+            Miracle UI
+          </div>
           <Anchor>Docs</Anchor>
           <Anchor route="/components/Accordion">Components</Anchor>
           <Anchor>Examples</Anchor>

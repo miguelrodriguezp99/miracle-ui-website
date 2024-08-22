@@ -1,6 +1,6 @@
-import { Accordion, AccordionItem } from "@miracle-ui/accordion";
 import codeblock from "./Code";
 import ComponentLayout from "../../../layout/ComponentLayout";
+import { Accordion, AccordionItem } from "../../../components/accordion";
 
 export const AccordionPage = () => {
   return (

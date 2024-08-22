@@ -8,6 +8,7 @@ export default function ThemeToggle() {
   const darkModeHandler = () => {
     setDark(!dark);
     document.body.classList.toggle("dark");
+    document.documentElement.classList.toggle("dark");
   };
 
   return (
@@ -16,8 +17,8 @@ export default function ThemeToggle() {
         className="flex items-center justify-center"
         onClick={() => darkModeHandler()}
       >
-        {dark && <Moon props="h-6 max-w-min fill-white" />}
-        {!dark && <Sun props="h-6 max-w-min fill-white" />}
+        {!dark && <Moon props="h-6 max-w-min fill-black" />}
+        {dark && <Sun props="h-6 max-w-min fill-white" />}
       </button>
     </div>
   );
