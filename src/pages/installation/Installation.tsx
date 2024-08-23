@@ -1,10 +1,10 @@
-import { Clipboard } from "@miracle-ui/react";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import ContentAside from "../../components/aside/ContentAside";
 import BreadcrumbIcon from "../../icons/BreadcrumbIcon";
 import useNav from "../../hooks/useNav";
 import codeblock from "./Code";
 import { CopyBlock, tomorrowNight } from "react-code-blocks";
+import { Clipboard } from "@miracle-ui/clipboard";
 
 const Installation = () => {
   const { handleClick } = useNav("/docs/installation");
@@ -37,6 +37,7 @@ const Installation = () => {
 
           <div className="mt-3">
             <Clipboard
+              fullWidth
               customBorderRadius="6px"
               customPadding="4px 12px"
               customBackgroundColor="#1d1f21"
@@ -52,6 +53,7 @@ const Installation = () => {
 
           <div className="mt-3">
             <Clipboard
+              fullWidth
               customBorderRadius="6px"
               customPadding="4px 12px"
               customBackgroundColor="#1d1f21"
@@ -70,6 +72,7 @@ const Installation = () => {
 
           <div className="mt-3">
             <Clipboard
+              fullWidth
               customBorderRadius="6px"
               customPadding="4px 12px"
               customBackgroundColor="#1d1f21"
@@ -86,6 +89,7 @@ const Installation = () => {
 
           <div className="mt-3">
             <Clipboard
+              fullWidth
               customBorderRadius="6px"
               customPadding="4px 12px"
               customBackgroundColor="#1d1f21"
@@ -106,6 +110,7 @@ const Installation = () => {
 
           <div className="mt-3">
             <Clipboard
+              fullWidth
               customBorderRadius="6px"
               customPadding="4px 12px"
               customBackgroundColor="#1d1f21"
@@ -125,6 +130,7 @@ const Installation = () => {
 
           <div className="mt-3">
             <Clipboard
+              fullWidth
               customBorderRadius="6px"
               customPadding="4px 12px"
               customBackgroundColor="#1d1f21"
@@ -181,6 +187,7 @@ const Installation = () => {
 
           <div className="mt-3">
             <Clipboard
+              fullWidth
               customBorderRadius="6px"
               customPadding="4px 12px"
               customBackgroundColor="#1d1f21"
@@ -197,6 +204,7 @@ const Installation = () => {
 
           <div className="mt-3">
             <Clipboard
+              fullWidth
               customBorderRadius="6px"
               customPadding="4px 12px"
               customBackgroundColor="#1d1f21"

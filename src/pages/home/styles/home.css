@@ -1,5 +1,13 @@
 .content {
-  z-index: -200;
+  z-index: 1;
+}
+
+.product {
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
 }
 
 .space {
@@ -16,6 +24,10 @@
   z-index: 1;
 }
 
+.radial {
+  background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #d1d130);
+}
+
 .space {
   animation: move var(--duration) linear infinite;
 }
@@ -26,5 +38,10 @@
   }
   to {
     transform: translateY(-100vh);
+  }
+}
+@media (min-width: 500px) and (max-width: 638px) {
+  .codetext {
+    margin-top: -150px;
   }
 }

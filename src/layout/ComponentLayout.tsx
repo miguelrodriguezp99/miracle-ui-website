@@ -1,4 +1,5 @@
-import { Clipboard, Tab, Tabs } from "@miracle-ui/react";
+import { Clipboard } from "@miracle-ui/clipboard";
+import { Tab, Tabs } from "@miracle-ui/react";
 import { CopyBlock, tomorrowNight } from "react-code-blocks";
 
 type Example = {
@@ -52,6 +53,7 @@ export default function ComponentLayout({
                 <Tab title="NPM">
                   <div className="mt-3 rounded-md ml-[12px]">
                     <Clipboard
+                      fullWidth
                       customBorderRadius="6px"
                       customPadding="4px 12px"
                       customBackgroundColor="#1d1f21"
@@ -65,6 +67,7 @@ export default function ComponentLayout({
                 <Tab title="CLI">
                   <div className="mt-3 rounded-md ml-[12px]">
                     <Clipboard
+                      fullWidth
                       customBorderRadius="6px"
                       customPadding="4px 12px"
                       customBackgroundColor="#1d1f21"

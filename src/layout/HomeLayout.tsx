@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 export default function HomeLayout() {
   return (
-    <div className="bg-white dark:bg-background font-geist text-sm h-screen">
+    <div className="bg-white dark:bg-background font-geist text-sm h-full">
       <Navbar />
       <Outlet />
     </div>

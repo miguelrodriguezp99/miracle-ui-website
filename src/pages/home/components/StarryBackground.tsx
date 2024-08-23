@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
-import "../styles/StarryBackground.css";
 
 const StarryBackground = () => {
   const COLORS = [
