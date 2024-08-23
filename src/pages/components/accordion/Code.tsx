@@ -1,72 +1,228 @@
 const codeblock = {
-  primaryCode: `
+  usage: `
 import { Accordion, AccordionItem } from "@miracle-ui/react";
-import { Tab, Tabs } from "@miracle-ui/tabs";
-import { atomOneDark, CopyBlock } from "react-code-blocks";
 
-export const AccordionPage = () => {
+const Demo = () => {
   return (
-    <div className="text-pwhite ">
-      <div className="space-y-2">
-        <p className="text-3xl font-bold">Accordion</p>
-        <p className="text-base">
-          Accordion display a list of high-level options that can
-          expand/collapse to reveal more information.
-        </p>
-      </div>
-      <div className="space-x-2 pt-4">
-        <button>Docs</button>
-        <button>API Reference</button>
-      </div>
-
-      <div className="pt-8 w-fit">
-        <div className="ml-[-12px]">
-          <Tabs variant="underlined">
-            <Tab title="Preview">
-              <div
-                className="ml-3 border border-1 border-pwhite/20 rounded-md px-4 py-12 mt-10 
-                flex align-middle justify-center"
-              >
-                <div className="w-[75%]">
-                  <Accordion>
-                    <AccordionItem
-                      title="Accordion Item 1"
-                      titleFontSize="16px"
-                      contentFontSize="14px"
-                    />
-                    <AccordionItem
-                      title="Accordion Item 1"
-                      titleFontSize="16px"
-                      contentFontSize="14px"
-                    />
-                    <AccordionItem
-                      title="Accordion Item 1"
-                      titleFontSize="16px"
-                      contentFontSize="14px"
-                    />
-                  </Accordion>
-                </div>
-              </div>
-            </Tab>
-            <Tab title="Code">
-              <div
-                className="ml-3 border border-1 border-pwhite/20 rounded-md px-4 py-12 mt-10 
-                flex align-middle justify-center"
-              >
-                <CopyBlock
-                  language="go"
-                  showLineNumbers={false}
-                  theme={atomOneDark}
-                />
-              </div>
-            </Tab>
-          </Tabs>
-        </div>
-      </div>
-    </div>
+    <Accordion>
+      <AccordionItem
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+        ratione vero doloremque. Maxime fugiat quod, eius aspernatur ab corporis
+        nostrum."
+      />
+      <AccordionItem
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            ratione vero doloremque. Maxime fugiat quod, eius aspernatur ab corporis
+            nostrum."
+      />
+      <AccordionItem
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            ratione vero doloremque. Maxime fugiat quod, eius aspernatur ab corporis
+            nostrum."
+      />
+    </Accordion>
   );
 };
+
+export default Demo;
 `,
+  withLabel: `
+import { Accordion, AccordionItem } from "@miracle-ui/react";
+
+const Demo = () => {
+  return (
+   <Accordion>
+      <AccordionItem
+        label="Press here to open"
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+      <AccordionItem
+        label="Press here to open"
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+      <AccordionItem
+        label="Press here to open"
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+    </Accordion>
+  );
+};
+
+export default Demo;`,
+  compact: `
+import { Accordion, AccordionItem } from "@miracle-ui/react";
+
+const Demo = () => {
+  return (
+  <Accordion isCompact>
+    <AccordionItem
+      title="Accordion Item 1"
+      titleFontSize="16px"
+      contentFontSize="14px"
+    />
+    <AccordionItem
+      title="Accordion Item 1"
+      titleFontSize="16px"
+      contentFontSize="14px"
+    />
+    <AccordionItem
+      title="Accordion Item 1"
+      titleFontSize="16px"
+      contentFontSize="14px"
+    />
+  </Accordion>
+  );
+};
+
+export default Demo;`,
+  multipleSelection: `
+import { Accordion, AccordionItem } from "@miracle-ui/react";
+
+const Demo = () => {
+  return (
+    <Accordion initialOpenIndexes={[1, 2]} selectionMode="multiple">
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+    </Accordion>
+  );
+};
+
+export default Demo;`,
+  splitted: `
+import { Accordion, AccordionItem } from "@miracle-ui/react";
+
+const Demo = () => {
+  return (
+   <Accordion variant="splitted">
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+    </Accordion>
+  );
+};
+
+export default Demo;`,
+  bordered: `
+import { Accordion, AccordionItem } from "@miracle-ui/react";
+
+const Demo = () => {
+  return (
+    <Accordion variant="bordered">
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+    </Accordion>
+  );
+};
+
+export default Demo;`,
+  shadow: `
+import { Accordion, AccordionItem } from "@miracle-ui/react";
+
+const Demo = () => {
+  return (
+    <Accordion variant="shadow">
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="16px"
+        contentFontSize="14px"
+      />
+    </Accordion>
+  );
+};
+
+export default Demo;`,
+
+  custom: `
+import { Accordion, AccordionItem } from "@miracle-ui/react";
+
+const Demo = () => {
+  return (
+      <Accordion
+      variant={"splitted"}
+      selectionMode="unique"
+      isCompact={true}
+    >
+      <AccordionItem
+        title="Accordion 1"
+        backgroundColor="#990000"
+        titleColor="white"
+        contentColor="white"
+      />
+      <AccordionItem
+        title="Accordion 2"
+        titleColor="black"
+        backgroundColor="lightgray"
+      />
+      <AccordionItem
+        title="Accordion 3"
+        backgroundColor="#990000"
+        contentColor="black"
+      />
+      <AccordionItem
+        title="Accordion 4"
+        backgroundColor="lightgray"
+        titleColor="black"
+        contentColor="black"
+      />
+    </Accordion>
+  );
+};
+
+export default Demo;`,
 };
 
 export default codeblock;

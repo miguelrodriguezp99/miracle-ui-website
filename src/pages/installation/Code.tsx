@@ -1,17 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  @font-face {
-    font-family: "Geist";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(/fonts/GeistVF.woff2) format("woff2");
-  }
-}
-
+const codeblock = {
+  primaryCode: `
 *,
 *::before,
 *::after {
@@ -38,14 +26,8 @@
   --active-color: #09090b;
   --inactive-color: #71717a;
 
-  --star-1: #09090b;
-  --star-2: #1a202c;
-  --star-3: #2d3748;
-  --star-4: #4b5563;
-
-  background-color: #09090b;
-
   scroll-behavior: smooth;
+
   scrollbar-width: auto;
   scrollbar-color: #4b5563 #ffffff;
 }
@@ -53,11 +35,6 @@
 .dark {
   scrollbar-width: auto;
   scrollbar-color: #4b5563 #1a202c;
-
-  --star-1: #fff2;
-  --star-2: #fff4;
-  --star-3: #fff7;
-  --star-4: #fffc;
 
   --active-color: white;
   --inactive-color: #b1b1b1;
@@ -192,3 +169,8 @@
   border: 2px solid var(--color) !important;
   color: var(--color);
 }
+
+  `,
+};
+
+export default codeblock;

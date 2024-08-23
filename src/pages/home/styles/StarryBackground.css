@@ -1,0 +1,30 @@
+.content {
+  z-index: -200;
+}
+
+.space {
+  --size: 2px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: white;
+  box-shadow: var(--space-layer);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.75;
+  z-index: 1;
+}
+
+.space {
+  animation: move var(--duration) linear infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}

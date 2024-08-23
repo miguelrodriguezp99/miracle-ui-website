@@ -10,13 +10,13 @@ export default function Aside() {
         <p className="text-pblack dark:text-pwhite mb-1 py-1 px-2 font-bold">
           Getting started
         </p>
-        <Anchor underlined props="py-1 px-2">
+        <Anchor underlined props="py-1 px-2" route="/docs/introduction">
           Introduction
         </Anchor>
-        <Anchor underlined props="py-1 px-2">
+        <Anchor underlined props="py-1 px-2" route="/docs/installation">
           Installation
         </Anchor>
-        <Anchor underlined props="py-1 px-2">
+        <Anchor underlined props="py-1 px-2" route="/docs/about">
           About the project
         </Anchor>
       </div>

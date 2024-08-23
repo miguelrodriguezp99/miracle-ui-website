@@ -1,12 +1,8 @@
-import { ReactNode } from "react";
 import Navbar from "../components/navbar/Navbar";
 import Aside from "../components/aside/Aside";
+import { Outlet } from "react-router-dom";
 
-type LayoutProps = {
-  children: ReactNode;
-};
-
-export default function Layout({ children }: LayoutProps) {
+export default function Layout() {
   return (
     <div className="bg-white dark:bg-background font-geist text-sm">
       <Navbar />
@@ -18,7 +14,7 @@ export default function Layout({ children }: LayoutProps) {
         >
           <Aside />
           <main className="relative py-8 xl:grid xl:grid-cols-[1fr_300px] overflow-auto gap-8">
-            {children}
+            <Outlet />
           </main>
         </div>
       </div>

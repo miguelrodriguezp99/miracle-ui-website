@@ -1,24 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: "Geist";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(/fonts/GeistVF.woff2) format("woff2");
+    
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
   }
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-:root {
+    
+  :root {
   --color-faded: #27272a;
   --color-faded-1: #3e3e43;
   --custom-hover-color: initial;
@@ -33,35 +21,7 @@
   --line-height-sm: 1.25rem;
   --line-height-md: 1.5rem;
   --line-height-lg: 1.75rem;
-  --text: #09090b;
-
-  --active-color: #09090b;
-  --inactive-color: #71717a;
-
-  --star-1: #09090b;
-  --star-2: #1a202c;
-  --star-3: #2d3748;
-  --star-4: #4b5563;
-
-  background-color: #09090b;
-
-  scroll-behavior: smooth;
-  scrollbar-width: auto;
-  scrollbar-color: #4b5563 #ffffff;
-}
-
-.dark {
-  scrollbar-width: auto;
-  scrollbar-color: #4b5563 #1a202c;
-
-  --star-1: #fff2;
-  --star-2: #fff4;
-  --star-3: #fff7;
-  --star-4: #fffc;
-
-  --active-color: white;
-  --inactive-color: #b1b1b1;
-  --text: #ecedee;
+  --text: hsl(210 5.56% 92.94%);
 }
 
 .default {
@@ -183,7 +143,9 @@
 
 .shadow {
   background-color: var(--color);
-  box-shadow: 0 10px 15px -3px var(--color-2), 0 4px 6px -4px var(--color-2);
+  box-shadow:
+    0 10px 15px -3px var(--color-2),
+    0 4px 6px -4px var(--color-2);
   border: none;
 }
 
