@@ -13,14 +13,17 @@ const About = () => {
 
         <section className="text-black dark:text-pwhite mt-4">
           <h1 className="text-3xl font-bold">About the Project</h1>
-          <p className="text-base mt-2 ">
+          <p className="text-base mt-5">
             Miracle UI is a lightweight and fast React component library built
             entirely with native CSS. Inspired by several modern component
             libraries, Miracle UI aims to provide developers with a simple yet
             powerful toolset for building responsive and interactive web
-            applications. The library is designed to be intuitive and easy to
-            use, making it a great choice for both beginners and experienced
-            developers.
+            applications.
+          </p>
+
+          <p className="text-base mt-5">
+            The library is designed to be intuitive and easy to use, making it a
+            great choice for both beginners and experienced developers.
           </p>
 
           <p className="text-base mt-5">

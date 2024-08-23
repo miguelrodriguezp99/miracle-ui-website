@@ -5,11 +5,13 @@ import codeblock from "./Code";
 const CodeExample = () => {
   return (
     <>
-      <div className="h-dvh bg-white dark:bg-pblack relative w-full z-40 ">
-        <div className="absolute top-[45%] left-[25%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
-        <section className="text-pblack dark:text-pwhite h-full text-center flex flex-col gap-5 lg:flex-row justify-center w-[85%] lg:w-[70%] mx-auto">
-          <div className="flex flex-col gap-6 w-full lg:w-[80%]">
-            <div className="text-start pt-[350px] sm:pt-[350px] md:pt-72 lg:pt-44 codetext">
+      <div className="h-dvh bg-white dark:bg-pblack relative w-full z-40">
+        <div className="absolute top-[40%] left-[25%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
+        <div className="hidden lg:flex absolute top-[40%] left-[70%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
+
+        <section className="text-pblack dark:text-pwhite h-full text-center flex flex-col gap-10 lg:flex-row justify-center w-[60%] lg:w-[75%] mx-auto">
+          <div className="flex flex-col gap-6 w-full lg:w-[70%]">
+            <div className="text-center lg:text-start pt-[350px] sm:pt-[350px] md:pt-44 lg:pt-44 codetext">
               <h1 className="text-5xl md:text-5xl lg:text-6xl">
                 Less code. More{" "}
                 <span className="text-pred dark:text-pyellow">speed.</span>
@@ -29,7 +31,7 @@ const CodeExample = () => {
                   imgRoute="https://nextui.org/images/fruit-4.jpeg"
                 />
               </Card>
-              <div className="hidden sm:flex">
+              <div className="hidden 2xl:flex">
                 <Card cardWidth="none" isClickable>
                   <CardProduct
                     title="Strawberry"
@@ -38,7 +40,7 @@ const CodeExample = () => {
                   />
                 </Card>
               </div>
-              <div className="hidden lg:flex">
+              <div className="hidden md:flex">
                 <Card cardWidth="none" isClickable>
                   <CardProduct
                     title="Strawberry"
@@ -50,7 +52,7 @@ const CodeExample = () => {
             </div>
           </div>
 
-          <div className="lg:w-[40%] pt-20 justify-center w-full lg:pt-44 min-h-[500px] lg:min-h-[300px] max-h-[700px] pb-10 items-start">
+          <div className="lg:w-[50%] flex pt-20 justify-center w-full lg:pt-44 min-h-[500px] lg:min-h-[300px] max-h-[80%] 2xl:max-h-[650px] lg:items-start">
             <CopyBlock
               wrapLongLines
               customStyle={{
