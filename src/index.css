@@ -43,7 +43,11 @@
   --star-3: #2d3748;
   --star-4: #4b5563;
 
-  background-color: #09090b;
+  --blurred-bg: hsl(240, 3.83%, 46.08%;);
+
+  --bgcolor: white;
+
+  background-color: var(--bgcolor);
 
   scroll-behavior: smooth;
   scrollbar-width: auto;
@@ -62,6 +66,12 @@
   --active-color: white;
   --inactive-color: #b1b1b1;
   --text: #ecedee;
+
+  --bgcolor: #09090b;
+}
+
+body {
+  background-color: var(--bgcolor);
 }
 
 .default {
