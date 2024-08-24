@@ -8,15 +8,15 @@ const DarkExample = () => {
     <>
       {/* <div className="hidden lg:flex absolute top-[40%] left-[70%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div> */}
 
-      <div className="h-auto bg-white dark:bg-pblack relative w-full z-40 pb-20 pt-10">
+      <div className="h-auto bg-white dark:bg-pblack relative z-40 pb-32">
         <div className="absolute top-[25%] left-[50%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-[120px] radial"></div>
 
         <section
           className="text-pblack dark:text-pwhite h-full text-center 
           flex flex-col gap-10 lg:flex-row justify-center
-          w-[60%] lg:w-[75%] mx-auto mb-20 mt-10 pt-12"
+          w-[90%] lg:max-w-[1350px] mx-auto pt-20"
         >
-          <div className="flex flex-col gap-6 w-full lg:w-[70%] codetext">
+          <div className="flex flex-col gap-6 w-full lg:w-[70%]">
             <div className="text-center lg:text-start ">
               <h1 className="text-5xl md:text-5xl lg:text-6xl">
                 Dark mode is simple to{" "}
@@ -61,7 +61,7 @@ const DarkExample = () => {
 
           <div
             className="lg:w-[50%] flex justify-center w-full rounded-lg
-            max-h-[400px] lg:max-h-[600px] lg:mt-10" //lg:pt-36 pt-20
+            max-h-[400px] lg:max-h-[675px] xl:max-h-[580px] lg:mt-10" //lg:pt-36 pt-20
           >
             <CopyBlock
               wrapLongLines

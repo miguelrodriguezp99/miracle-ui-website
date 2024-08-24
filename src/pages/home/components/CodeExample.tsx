@@ -5,16 +5,13 @@ import codeblock from "./Code";
 const CodeExample = () => {
   return (
     <>
-      <div className="h-auto bg-white dark:bg-pblack relative w-full z-40 pb-24 pt-10">
+      <div className="h-auto bg-white dark:bg-pblack relative w-full z-40 pb-20">
         <div className="absolute top-[45%] left-[25%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
         <div className="hidden lg:flex absolute top-[50%] left-[70%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
 
-        <section className="text-pblack dark:text-pwhite text-center flex flex-col gap-10 lg:flex-row w-[60%] lg:w-[75%] mx-auto mt-10 pt-12">
-          <div
-            className="flex flex-col gap-6 w-full lg:w-[70%] lg:mt-20
-           codetext" // pt-[350px] sm:pt-[350px] md:pt-36 lg:pt-46
-          >
-            <div className="text-center lg:text-start ">
+        <section className="text-pblack dark:text-pwhite text-center flex flex-col gap-10 lg:flex-row w-[90%] lg:max-w-[1350px] mx-auto pt-20">
+          <div className="flex flex-col gap-6 w-full lg:w-[1350px] lg:mt-12">
+            <div className="text-center lg:text-start">
               <h1 className="text-5xl md:text-5xl lg:text-6xl">
                 Less code. More{" "}
                 <span className="text-pred dark:text-pyellow">speed.</span>
@@ -56,8 +53,8 @@ const CodeExample = () => {
           </div>
 
           <div
-            className="lg:w-[50%] flex justify-center w-full rounded-lg
-            max-h-[400px] lg:max-h-[600px] lg:mt-10" //lg:pt-36 pt-20
+            className="lg:w-[70%] flex justify-center w-full rounded-lg
+            max-h-[400px] lg:max-h-[600px]"
           >
             <CopyBlock
               wrapLongLines

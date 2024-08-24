@@ -37,7 +37,7 @@
     transform: translateY(0);
   }
   to {
-    transform: translateY(-350vh);
+    transform: translateY(-370vh);
   }
 }
 

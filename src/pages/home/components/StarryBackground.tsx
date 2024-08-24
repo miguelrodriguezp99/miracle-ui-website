@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 
 const StarryBackground = () => {
@@ -23,7 +22,9 @@ const StarryBackground = () => {
       layer.push(`${x}vw ${y}vh 0 ${color}, ${x}vw ${y + 100}vh 0 ${color}`);
       layer.push(`${x}vw ${y}vh 0 ${color}, ${x}vw ${y + 200}vh 0 ${color}`);
       layer.push(`${x}vw ${y}vh 0 ${color}, ${x}vw ${y + 300}vh 0 ${color}`);
-      layer.push(`${x}vw ${y}vh 0 ${color}, ${x}vw ${y + 350}vh 0 ${color}`);
+      layer.push(`${x}vw ${y}vh 0 ${color}, ${x}vw ${y + 370}vh 0 ${color}`);
+      layer.push(`${x}vw ${y}vh 0 ${color}, ${x}vw ${y + 470}vh 0 ${color}`);
+      layer.push(`${x}vw ${y}vh 0 ${color}, ${x}vw ${y + 570}vh 0 ${color}`);
     }
     const container = document.querySelector(selector) as HTMLElement;
     container.style.setProperty("--size", size);
@@ -32,12 +33,12 @@ const StarryBackground = () => {
   };
 
   useEffect(() => {
-    generateSpaceLayer("2px", ".space-1", 250, "87s");
-    generateSpaceLayer("3px", ".space-2", 100, "70s");
-    generateSpaceLayer("6px", ".space-3", 25, "52s");
-    // generateSpaceLayer("2px", ".space-1", 250, "5s");
-    // generateSpaceLayer("3px", ".space-2", 100, "5s");
-    // generateSpaceLayer("6px", ".space-3", 25, "5s");
+    generateSpaceLayer("2px", ".space-1", 250, "100s");
+    generateSpaceLayer("3px", ".space-2", 100, "83s");
+    generateSpaceLayer("6px", ".space-3", 25, "65s");
+    // generateSpaceLayer("2px", ".space-1", 250, "10s");
+    // generateSpaceLayer("3px", ".space-2", 100, "10s");
+    // generateSpaceLayer("6px", ".space-3", 25, "10s");
   }, []);
 
   return (
