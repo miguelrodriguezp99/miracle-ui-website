@@ -21,6 +21,9 @@ const StarryBackground = () => {
       const x = Math.floor(Math.random() * 100);
       const y = Math.floor(Math.random() * 100);
       layer.push(`${x}vw ${y}vh 0 ${color}, ${x}vw ${y + 100}vh 0 ${color}`);
+      layer.push(`${x}vw ${y}vh 0 ${color}, ${x}vw ${y + 200}vh 0 ${color}`);
+      layer.push(`${x}vw ${y}vh 0 ${color}, ${x}vw ${y + 300}vh 0 ${color}`);
+      layer.push(`${x}vw ${y}vh 0 ${color}, ${x}vw ${y + 350}vh 0 ${color}`);
     }
     const container = document.querySelector(selector) as HTMLElement;
     container.style.setProperty("--size", size);
@@ -29,9 +32,12 @@ const StarryBackground = () => {
   };
 
   useEffect(() => {
-    generateSpaceLayer("2px", ".space-1", 250, "25s");
-    generateSpaceLayer("3px", ".space-2", 100, "20s");
-    generateSpaceLayer("6px", ".space-3", 25, "15s");
+    generateSpaceLayer("2px", ".space-1", 250, "87s");
+    generateSpaceLayer("3px", ".space-2", 100, "70s");
+    generateSpaceLayer("6px", ".space-3", 25, "52s");
+    // generateSpaceLayer("2px", ".space-1", 250, "5s");
+    // generateSpaceLayer("3px", ".space-2", 100, "5s");
+    // generateSpaceLayer("6px", ".space-3", 25, "5s");
   }, []);
 
   return (

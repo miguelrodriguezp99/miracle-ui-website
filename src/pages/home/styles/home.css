@@ -25,7 +25,7 @@
 }
 
 .radial {
-  background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #d1d130);
+  background: radial-gradient(closest-side, #3f87a6, #ebf8e1, var(--alt-text));
 }
 
 .space {
@@ -37,11 +37,12 @@
     transform: translateY(0);
   }
   to {
-    transform: translateY(-100vh);
+    transform: translateY(-350vh);
   }
 }
-@media (min-width: 500px) and (max-width: 638px) {
+
+/* @media (min-width: 500px) and (max-width: 638px) {
   .codetext {
     margin-top: -150px;
   }
-}
+} */

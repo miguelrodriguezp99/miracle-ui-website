@@ -5,13 +5,16 @@ import codeblock from "./Code";
 const CodeExample = () => {
   return (
     <>
-      <div className="h-dvh bg-white dark:bg-pblack relative w-full z-40">
-        <div className="absolute top-[40%] left-[25%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
-        <div className="hidden lg:flex absolute top-[40%] left-[70%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
+      <div className="h-auto bg-white dark:bg-pblack relative w-full z-40 pb-24 pt-10">
+        <div className="absolute top-[45%] left-[25%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
+        <div className="hidden lg:flex absolute top-[50%] left-[70%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
 
-        <section className="text-pblack dark:text-pwhite h-full text-center flex flex-col gap-10 lg:flex-row justify-center w-[60%] lg:w-[75%] mx-auto">
-          <div className="flex flex-col gap-6 w-full lg:w-[70%]">
-            <div className="text-center lg:text-start pt-[350px] sm:pt-[350px] md:pt-44 lg:pt-44 codetext">
+        <section className="text-pblack dark:text-pwhite text-center flex flex-col gap-10 lg:flex-row w-[60%] lg:w-[75%] mx-auto mt-10 pt-12">
+          <div
+            className="flex flex-col gap-6 w-full lg:w-[70%] lg:mt-20
+           codetext" // pt-[350px] sm:pt-[350px] md:pt-36 lg:pt-46
+          >
+            <div className="text-center lg:text-start ">
               <h1 className="text-5xl md:text-5xl lg:text-6xl">
                 Less code. More{" "}
                 <span className="text-pred dark:text-pyellow">speed.</span>
@@ -23,7 +26,7 @@ const CodeExample = () => {
               </p>
             </div>
 
-            <div className="max-h-min product mt-10 flex gap-4 flex-wrap w-full justify-center  md:justify-center 2xl:justify-start">
+            <div className="max-h-min product mt-10 flex gap-4 flex-wrap w-full justify-center md:justify-center 2xl:justify-start">
               <Card cardWidth="none" isClickable>
                 <CardProduct
                   title="Orange"
@@ -52,12 +55,15 @@ const CodeExample = () => {
             </div>
           </div>
 
-          <div className="lg:w-[50%] flex pt-20 justify-center w-full lg:pt-44 min-h-[500px] lg:min-h-[300px] max-h-[80%] 2xl:max-h-[650px] lg:items-start">
+          <div
+            className="lg:w-[50%] flex justify-center w-full rounded-lg
+            max-h-[400px] lg:max-h-[600px] lg:mt-10" //lg:pt-36 pt-20
+          >
             <CopyBlock
               wrapLongLines
               customStyle={{
                 textAlign: "left",
-                height: "100%",
+                borderRadius: "10px",
                 overflow: "auto",
                 width: "100%",
                 scrollbarWidth: "thin",

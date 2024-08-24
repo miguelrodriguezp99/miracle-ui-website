@@ -25,7 +25,7 @@ return (
         imgRoute="imageroute2"
         />
     </Card>
-);
+    );
 };
 
 export default Demo;

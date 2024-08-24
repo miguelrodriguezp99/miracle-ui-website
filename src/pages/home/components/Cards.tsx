@@ -2,7 +2,7 @@ import BlurredCard from "./BlurredCard";
 
 const Cards = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-32 max-w-[1300px] mx-auto px-7 pb-20">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-32 max-w-[1300px] mx-auto px-7">
       <BlurredCard>
         <div className="flex flex-col text-base">
           <div className="flex items-center text-center gap-3">

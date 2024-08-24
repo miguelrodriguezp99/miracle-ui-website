@@ -47,6 +47,8 @@
 
   --bgcolor: white;
 
+  --alt-text: #b91717;
+
   background-color: var(--bgcolor);
 
   scroll-behavior: smooth;
@@ -68,6 +70,8 @@
   --text: #ecedee;
 
   --bgcolor: #09090b;
+
+  --alt-text: #d1d130;
 }
 
 body {
