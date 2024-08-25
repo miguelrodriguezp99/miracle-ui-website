@@ -195,30 +195,30 @@ const Demo = () => {
       variant={"splitted"}
       selectionMode="unique"
       isCompact={true}
-    >
-      <AccordionItem
-        title="Accordion 1"
-        backgroundColor="#990000"
-        titleColor="white"
-        contentColor="white"
-      />
-      <AccordionItem
-        title="Accordion 2"
-        titleColor="black"
-        backgroundColor="lightgray"
-      />
-      <AccordionItem
-        title="Accordion 3"
-        backgroundColor="#990000"
-        contentColor="black"
-      />
-      <AccordionItem
-        title="Accordion 4"
-        backgroundColor="lightgray"
-        titleColor="black"
-        contentColor="black"
-      />
-    </Accordion>
+      >
+        <AccordionItem
+          title="Accordion 1"
+          backgroundColor="#990000"
+          titleColor="white"
+          contentColor="white"
+        />
+        <AccordionItem
+          title="Accordion 2"
+          titleColor="black"
+          backgroundColor="lightgray"
+        />
+        <AccordionItem
+          title="Accordion 3"
+          backgroundColor="#990000"
+          contentColor="black"
+        />
+        <AccordionItem
+          title="Accordion 4"
+          backgroundColor="lightgray"
+          titleColor="black"
+          contentColor="black"
+        />
+      </Accordion>
   );
 };
 

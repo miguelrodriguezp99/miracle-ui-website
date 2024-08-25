@@ -18,7 +18,7 @@ const DarkExample = () => {
         >
           <div className="flex flex-col gap-6 w-full lg:w-[70%]">
             <div className="text-center lg:text-start ">
-              <h1 className="text-5xl md:text-5xl lg:text-6xl">
+              <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold">
                 Dark mode is simple to{" "}
                 <span className="text-pred dark:text-pyellow">implement</span>
               </h1>

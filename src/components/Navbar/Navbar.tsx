@@ -14,10 +14,10 @@ export default function Navbar() {
           >
             Miracle UI
           </div>
-          <Anchor>Docs</Anchor>
+          <Anchor route="/docs/introduction">Docs</Anchor>
           <Anchor route="/components/Accordion">Components</Anchor>
-          <Anchor route="docs/examples">Examples</Anchor>
-          <Anchor route="docs/colos">Colors</Anchor>
+          <Anchor route="/docs/examples">Examples</Anchor>
+          <Anchor route="/docs/colors">Colors</Anchor>
         </div>
 
         <div>

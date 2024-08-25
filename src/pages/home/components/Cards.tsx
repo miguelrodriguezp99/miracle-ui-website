@@ -1,3 +1,6 @@
+import ComputerIcon from "../../../icons/ComputerIcon";
+import MoonIcon from "../../../icons/MoonIcon";
+import ThemeableIcon from "../../../icons/ThemeableIcon";
 import Thunder from "../../../icons/Thunder";
 import BlurredCard from "./BlurredCard";
 
@@ -10,22 +13,25 @@ const Cards = () => {
           experience for your customers.
         </p>
       </BlurredCard>
-      <BlurredCard svg={<Thunder />} title="Fast">
+      <BlurredCard svg={<ThemeableIcon />} title="Themeable">
         <p>
-          Spend less time writing UI code and more time building a great
-          experience for your customers.
+          You can customize the components with a multitude of properties to
+          suit your preferences.
         </p>
       </BlurredCard>
-      <BlurredCard svg={<Thunder />} title="Fast">
+      <BlurredCard
+        svg={<MoonIcon props="text-pred dark:text-pyellow" />}
+        title="Light and Dark"
+      >
         <p>
-          Spend less time writing UI code and more time building a great
-          experience for your customers.
+          Automatic dark mode: MiracleUI instantly switches themes when it
+          detects HTML theme prop changes.
         </p>
       </BlurredCard>
-      <BlurredCard svg={<Thunder />} title="Fast">
+      <BlurredCard svg={<ComputerIcon />} title="Unique DX">
         <p>
-          Spend less time writing UI code and more time building a great
-          experience for your customers.
+          MiracleUI is fully-typed to minimize the learning curve, and provide
+          the best possible developer experience.
         </p>
       </BlurredCard>
     </section>

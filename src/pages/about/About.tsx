@@ -68,7 +68,7 @@ const About = () => {
         </div>
       </div>
 
-      <ContentAside title={["About", "FAQ"]} />
+      <ContentAside title={["About"]} />
     </>
   );
 };

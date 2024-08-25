@@ -12,7 +12,7 @@ const CodeExample = () => {
         <section className="text-pblack dark:text-pwhite text-center flex flex-col gap-10 lg:flex-row w-[90%] lg:max-w-[1350px] mx-auto pt-20">
           <div className="flex flex-col gap-6 w-full lg:w-[1350px] lg:mt-12">
             <div className="text-center lg:text-start">
-              <h1 className="text-5xl md:text-5xl lg:text-6xl">
+              <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold">
                 Less code. More{" "}
                 <span className="text-pred dark:text-pyellow">speed.</span>
               </h1>

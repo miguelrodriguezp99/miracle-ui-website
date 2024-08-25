@@ -206,7 +206,7 @@ export const AccordionPage = () => {
                 />
               </Accordion>
             ),
-            code: codeblock.usage,
+            code: codeblock.custom,
           },
         ]}
       />
