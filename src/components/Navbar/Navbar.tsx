@@ -1,4 +1,5 @@
 import useNav from "../../hooks/useNav";
+import Logo from "../../icons/Logo";
 import Anchor from "../anchor/Anchor";
 import ThemeToggle from "../themeToggle/ThemeToggle";
 
@@ -10,8 +11,11 @@ export default function Navbar() {
         <div className="flex gap-5">
           <div
             onClick={handleClick}
-            className="text-pblack dark:text-pwhite text-[16px] font-bold cursor-pointer"
+            className="flex items-center justify-center gap-2 text-pblack dark:text-pwhite text-[16px] font-bold cursor-pointer"
           >
+            <span className="hidden lg:flex">
+              <Logo />
+            </span>
             Miracle UI
           </div>
           <Anchor route="/docs/introduction">Docs</Anchor>

@@ -7,6 +7,7 @@ import Installation from "./pages/installation/Installation";
 import About from "./pages/about/About";
 import Layout from "./layout/Layout";
 import HomeLayout from "./layout/HomeLayout";
+import Colors from "./pages/colors/Colors";
 
 function App() {
   const componentArray = Object.values(components);
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route element={<HomeLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/docs/colors" element={<Colors />} />
         </Route>
 
         <Route element={<Layout />}>

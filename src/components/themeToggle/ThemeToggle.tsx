@@ -3,12 +3,17 @@ import Moon from "./Moon";
 import Sun from "./Sun";
 
 export default function ThemeToggle() {
-  // Inicializar el estado de "dark" basado en las preferencias del sistema
-  const [dark, setDark] = useState(
-    () =>
+  // Inicializar el estado de "dark" basado en el localStorage o las preferencias del sistema
+  const [dark, setDark] = useState(() => {
+    const storedPreference = localStorage.getItem("theme");
+    if (storedPreference) {
+      return storedPreference === "dark";
+    }
+    return (
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
-  );
+    );
+  });
 
   // Aplicar el tema basado en el estado inicial
   useEffect(() => {
@@ -28,7 +33,10 @@ export default function ThemeToggle() {
     const handleSystemThemeChange = (e: {
       matches: boolean | ((prevState: boolean) => boolean);
     }) => {
-      setDark(e.matches);
+      // Solo actualiza el estado si no hay preferencia manual
+      if (!localStorage.getItem("theme")) {
+        setDark(e.matches);
+      }
     };
 
     mediaQuery.addEventListener("change", handleSystemThemeChange);
@@ -38,9 +46,17 @@ export default function ThemeToggle() {
     };
   }, []);
 
+  const switchTheme = () => {
+    const newDarkMode = !dark;
+    setDark(newDarkMode);
+    localStorage.setItem("theme", newDarkMode ? "dark" : "light");
+  };
+
   // Función para manejar el cambio de tema manualmente
   const darkModeHandler = () => {
-    setDark(!dark);
+    if (!document.startViewTransition) switchTheme();
+
+    document.startViewTransition(switchTheme);
   };
 
   return (
