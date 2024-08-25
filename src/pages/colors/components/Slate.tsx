@@ -16,7 +16,7 @@ const Slate = ({ title, colors }: Props) => {
         {colors.map((color, index) => (
           <button
             key={index}
-            className={`group relative flex aspect-[3/1] sm:aspect-[4/6] w-full h-full flex-1 flex-col gap-2 text-pblack dark:text-pwhite sm:h-auto sm:w-auto [&>svg]:absolute [&>svg]:right-4 [&>svg]:top-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:opacity-0 [&>svg]:transition-opacity"`}
+            className={`group relative flex aspect-[3/1] sm:aspect-[4/6] w-full h-full flex-1 flex-col gap-2 text-pblack dark:text-pwhite sm:h-auto  sm:w-auto [&>svg]:absolute [&>svg]:right-4 [&>svg]:top-4 [&>svg]:h-3.5 [&>svg]:w-3.5 [&>svg]:opacity-0 [&>svg]:transition-opacity"`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -34,15 +34,14 @@ const Slate = ({ title, colors }: Props) => {
               <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
             </svg>
             <div
-              className={`w-full flex-1 rounded-md bg-[${color}] md:rounded-lg`}
+              style={{ backgroundColor: color }}
+              className={`w-full flex-1 rounded-md md:rounded-lg`}
             ></div>
             <div className="flex w-full flex-col items-center justify-center gap-1">
               <span className="hidden font-mono text-xs tabular-nums text-pblack dark:text-pwhite/60 transition-colors group-hover:text-foreground lg:flex">
                 {color}
               </span>
-              <span className="font-mono text-xs tabular-nums text-pblack dark:text-pwhite/60 transition-colors group-hover:text-foreground lg:hidden">
-                50
-              </span>
+              <span className="font-mono text-xs tabular-nums text-pblack dark:text-pwhite/60 transition-colors group-hover:text-foreground lg:hidden"></span>
             </div>
           </button>
         ))}

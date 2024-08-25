@@ -100,28 +100,28 @@ const AccesibilityExample = () => {
                   >
                     <DropdownItem
                       onClick={() => handleChange("top")}
-                      key="new"
+                      key="top"
                       variant={state === "top" ? "flat" : "solid"}
                     >
                       Top
                     </DropdownItem>
                     <DropdownItem
                       onClick={() => handleChange("bottom")}
-                      key="copy"
+                      key="bottom"
                       variant={state === "bottom" ? "flat" : "solid"}
                     >
                       Bottom
                     </DropdownItem>
                     <DropdownItem
                       onClick={() => handleChange("left")}
-                      key="edit"
+                      key="left"
                       variant={state === "left" ? "flat" : "solid"}
                     >
                       Left
                     </DropdownItem>
                     <DropdownItem
                       onClick={() => handleChange("right")}
-                      key="edit"
+                      key="right"
                       variant={state === "right" ? "flat" : "solid"}
                     >
                       Right

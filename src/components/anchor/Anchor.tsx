@@ -24,7 +24,7 @@ export default function Anchor({ children, underlined, props, route }: Props) {
   return (
     <a
       onClick={handleClick}
-      className={`cursor-pointer transition-color duration-300 
+      className={`cursor-pointer transition-color duration-300 flex items-center 
         ${
           isActive
             ? "text-pblack dark:text-pwhite"

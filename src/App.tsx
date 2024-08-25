@@ -8,12 +8,14 @@ import About from "./pages/about/About";
 import Layout from "./layout/Layout";
 import HomeLayout from "./layout/HomeLayout";
 import Colors from "./pages/colors/Colors";
+import ScrollToTop from "./hooks/useScrollToTop";
 
 function App() {
   const componentArray = Object.values(components);
 
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route element={<HomeLayout />}>
           <Route path="/" element={<Home />} />
