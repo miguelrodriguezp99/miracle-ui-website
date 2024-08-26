@@ -18,7 +18,7 @@ export default function Aside() {
             Installation
           </Anchor>
           <Anchor underlined props="py-1" route="/docs/about">
-            About the project
+            About
           </Anchor>
         </div>
 

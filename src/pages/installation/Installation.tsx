@@ -7,7 +7,7 @@ import { CopyBlock, tomorrowNight } from "react-code-blocks";
 import { Clipboard } from "@miracle-ui/clipboard";
 
 const Installation = () => {
-  const { handleClick } = useNav("/docs/installation");
+  const { handleClick } = useNav("/docs/about");
 
   return (
     <>
@@ -217,15 +217,13 @@ const Installation = () => {
 
         <div className="flex flex-row items-end justify-end mt-5">
           <button
-            onClick={handleClick}
+            onClick={() => handleClick()}
             className="border border-1 border-pblack/10 dark:border-pwhite/10 
             rounded-[4px] px-4 py-1.5 transition-all duration-200
           hover:bg-pblack/10 dark:hover:bg-pwhite/20"
           >
             <div className="flex items-center gap-2 text-center">
-              <p className="text-pblack dark:text-pwhite text-[14px]">
-                Installation
-              </p>
+              <p className="text-pblack dark:text-pwhite text-[14px]">About</p>
               <BreadcrumbIcon />
             </div>
           </button>
