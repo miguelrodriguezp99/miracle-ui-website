@@ -1,6 +1,7 @@
 import { Clipboard } from "@miracle-ui/clipboard";
 import { Tab, Tabs } from "@miracle-ui/react";
 import { CopyBlock, tomorrowNight } from "react-code-blocks";
+import Breadcrumb from "../components/breadcrumb/Breadcrumb";
 
 type Example = {
   title: string;
@@ -24,7 +25,9 @@ export default function ComponentLayout({
   return (
     <>
       <div className="text-black dark:text-pwhite relative">
-        <div>
+        <Breadcrumb title={title} />
+
+        <div className="mt-4">
           <div className="space-y-2">
             <p className="text-3xl font-bold">{title}</p>
             <p className="text-base">{description}</p>

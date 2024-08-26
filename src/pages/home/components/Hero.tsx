@@ -2,9 +2,9 @@ import Button from "../../../components/button/Button";
 
 const Hero = () => {
   return (
-    <div className="max-w-[1300px] mx-auto mt-32 text-pblack dark:text-pwhite w-full hero">
-      <div className="w-[80%] lg:w-[60%] mx-auto">
-        <h1 className="text-5xl md:text-5xl lg:text-6xl text-pblack dark:text-pwhite font-bold text-center">
+    <div className="mt-32 text-pblack dark:text-pwhite w-full hero">
+      <div className="w-[100%] lg:w-[60%] mx-auto">
+        <h1 className="text-5xl md:text-6xl lg:text-6xl text-pblack dark:text-pwhite font-bold text-center">
           Create accesible and lighter react apps{" "}
           <span className="text-pred dark:text-pyellow"> with speed.</span>
         </h1>

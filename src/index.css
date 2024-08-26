@@ -49,17 +49,20 @@
 
   --alt-text: #b91717;
 
+  --scrollbar1: #4b5563;
+  --scrollbar2: #ffffff;
+
+  --scrollbarsheet1: #4b5563;
+  --scrollbarsheet2: #ffffff;
+
   background-color: var(--bgcolor);
 
   scroll-behavior: smooth;
   scrollbar-width: auto;
-  scrollbar-color: #4b5563 #ffffff;
+  scrollbar-color: var(--scrollbar1) var(--scrollbar2);
 }
 
 .dark {
-  scrollbar-width: auto;
-  scrollbar-color: #4b5563 #1a202c;
-
   --star-1: #fff2;
   --star-2: #fff4;
   --star-3: #fff7;
@@ -72,12 +75,50 @@
   --bgcolor: #09090b;
 
   --alt-text: #d1d130;
+
+  --scrollbar1: #4b5563;
+  --scrollbar2: #1a202c;
+
+  --scrollbarsheet1: #272a2e;
+  --scrollbarsheet2: #09090b;
+
+  scrollbar-width: auto;
+  scrollbar-color: var(--scrollbar1) var(--scrollbar2);
 }
 
 body {
   background-color: var(--bgcolor);
 }
 
+/* THEME TOGGLE TRANSITION */
+
+::view-transition-new(root) {
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="red"/></svg>')
+    center / 0 no-repeat;
+  animation: scale 1s;
+}
+
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+  animation: none;
+  z-index: -1;
+}
+.dark::view-transition-new(root) {
+  animation: scale 1s;
+}
+
+@keyframes scale {
+  to {
+    mask-size: 200vmax;
+  }
+}
+
+.sheet {
+  scrollbar-width: auto;
+  scrollbar-color: var(--scrollbarsheet1) var(--scrollbarsheet2);
+}
+
+/* MIRACLE UI LIB */
 .default {
   --color: #424247;
   --color-2: #39393e;
@@ -205,25 +246,4 @@ body {
   background-color: transparent;
   border: 2px solid var(--color) !important;
   color: var(--color);
-}
-
-::view-transition-new(root) {
-  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="red"/></svg>')
-    center / 0 no-repeat;
-  animation: scale 1s;
-}
-
-::view-transition-old(root),
-.dark::view-transition-old(root) {
-  animation: none;
-  z-index: -1;
-}
-.dark::view-transition-new(root) {
-  animation: scale 1s;
-}
-
-@keyframes scale {
-  to {
-    mask-size: 200vmax;
-  }
 }

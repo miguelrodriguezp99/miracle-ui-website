@@ -38,9 +38,9 @@ const AccesibilityExample = () => {
 
   return (
     <>
-      <section className="text-pblack dark:text-pwhite text-center flex flex-col gap-10 lg:flex-row w-[90%] lg:max-w-[1350px] mx-auto pb-20 pt-20 relative">
+      <section className="text-pblack dark:text-pwhite text-center flex flex-col gap-10 lg:flex-row w-full] pb-20 pt-20 relative">
         <div className="flex flex-col gap-6 w-full items-center lg:items-start">
-          <div className="lg:text-start w-[100%] md:w-[65%]">
+          <div className="lg:text-start w-full md:w-[65%]">
             <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold">
               Built-in{" "}
             </h1>
@@ -55,7 +55,7 @@ const AccesibilityExample = () => {
 
           <div className="flex flex-col lg:flex-row w-full gap-5 relative">
             <div className="absolute top-[5%] left-[13%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-3xl radial brightness-[0.2]"></div>
-            <div className="lg:w-[50%] grid grid-cols md:grid-cols-2 lg:grid-cols-2 gap-4 lg:h-[50%] mt-24">
+            <div className="lg:w-[50%] grid grid-cols md:grid-cols-2 lg:grid-cols-2 gap-4 lg:h-[50%] mt-16 lg:mt-24">
               <AccesibilityCard svg={<Developer />}>
                 Developer experience
               </AccesibilityCard>
