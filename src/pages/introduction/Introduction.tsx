@@ -41,18 +41,26 @@ const Introduction = () => {
           <h1 className="text-2xl font-bold">FAQ</h1>
           <Accordion>
             <AccordionItem
+              titleFontSize="14px"
+              contentFontSize="14px"
               title="Is it worth installing the @miracle-ui/react package?"
               content="This package is primarily recommended for testing or learning purposes. If you're looking for optimal performance and lightweight functionality, we suggest using the individual packages instead."
             />
             <AccordionItem
+              titleFontSize="14px"
+              contentFontSize="14px"
               title="Is Miracle UI a lightweight component library?"
               content="Yes, Miracle UI is designed to be lightweight and fast, as it does not rely on third-party libraries. This ensures that the components are both efficient and quick to load."
             />
             <AccordionItem
-              title="Can Miracle UI be used with frameworks other than React?"
+              titleFontSize="14px"
+              contentFontSize="14px"
+              title="Can Miracle UI be used with other frameworks?"
               content="No, Miracle UI is specifically built for React and is not intended for use with other frameworks or libraries."
             />
             <AccordionItem
+              titleFontSize="14px"
+              contentFontSize="14px"
               title="Is the project still under active development?"
               content="Yes, Miracle UI is actively being developed, with plans to add more components and features in the future. Community contributions are also highly encouraged."
             />
