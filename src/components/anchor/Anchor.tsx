@@ -14,15 +14,6 @@ export default function Anchor({ children, underlined, props, route }: Props) {
     .toLowerCase()
     .includes(`/${children.toLowerCase()}`);
 
-  // const isActive = children
-  //   .toString()
-  //   .toLowerCase()
-  //   .includes(location.pathname.toLowerCase());
-
-  console.log(children.toLowerCase());
-  console.log(location.pathname);
-  console.log(isActive);
-
   const handleClick = () => {
     if (route) {
       return navigate(route);
