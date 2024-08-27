@@ -1,4 +1,4 @@
-import { Checkbox } from "@miracle-ui/checkbox";
+import { Checkbox } from "@miracle-ui/react";
 import ComponentLayout from "../../../layout/ComponentLayout";
 
 export const CheckboxPage = () => {
