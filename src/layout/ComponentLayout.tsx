@@ -109,7 +109,7 @@ export default function ComponentLayout({
                       <Tab title="Preview">
                         <div
                           className="ml-3 border border-1 border-black/20 dark:border-pwhite/20 rounded-md px-20 py-5 mt-5
-                        flex items-center justify-center min-h-[350px]"
+                        flex items-center justify-center min-h-[350px] "
                         >
                           {example.component}
                         </div>

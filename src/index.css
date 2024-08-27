@@ -125,7 +125,6 @@ body {
   --color-3: #39393d;
   --color-4: #2a2a2f;
   --color-5: #1e1e22;
-  color: white;
 }
 
 .primary {
@@ -134,7 +133,6 @@ body {
   --color-3: #004493;
   --color-4: #002e62;
   --color-5: #001731;
-  color: white;
 }
 
 .secondary {
@@ -143,7 +141,6 @@ body {
   --color-3: #481878;
   --color-4: #301050;
   --color-5: #180828;
-  color: white;
 }
 
 .success {
@@ -152,7 +149,6 @@ body {
   --color-3: #0e793c;
   --color-4: #095028;
   --color-5: #052814;
-  color: black;
 }
 
 .warning {
@@ -161,7 +157,6 @@ body {
   --color-3: #936316;
   --color-4: #62420e;
   --color-5: #312107;
-  color: black;
 }
 
 .danger {
@@ -170,7 +165,6 @@ body {
   --color-3: #920b3a;
   --color-4: #610726;
   --color-5: #310413;
-  color: white;
 }
 
 .ripple {
