@@ -55,6 +55,8 @@
   --scrollbarsheet1: #4b5563;
   --scrollbarsheet2: #ffffff;
 
+  --resizer-border: #09090b80;
+
   background-color: var(--bgcolor);
 
   scroll-behavior: smooth;
@@ -81,6 +83,8 @@
 
   --scrollbarsheet1: #272a2e;
   --scrollbarsheet2: #09090b;
+
+  --resizer-border: #ecedee40;
 
   scrollbar-width: auto;
   scrollbar-color: var(--scrollbar1) var(--scrollbar2);
@@ -240,4 +244,9 @@ body {
   background-color: transparent;
   border: 2px solid var(--color) !important;
   color: var(--color);
+}
+
+.resizer-container {
+  color: var(--text);
+  border: 1px solid var(--resizer-border);
 }

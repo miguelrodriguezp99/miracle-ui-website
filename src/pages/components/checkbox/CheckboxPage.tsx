@@ -1,11 +1,12 @@
-import { Checkbox } from "@miracle-ui/react";
+import { Checkbox } from "@miracle-ui/checkbox";
 import ComponentLayout from "../../../layout/ComponentLayout";
+import { CheckboxGroup } from "@miracle-ui/react";
 
 export const CheckboxPage = () => {
   return (
     <ComponentLayout
       title="Checkbox"
-      description="Accordion display a list of high-level options that can expand/collapse to reveal more information."
+      description="Checkboxes allow users to select multiple items from a list of individual items, or to mark one individual item as selected."
       examples={[
         {
           title: "Usage",
@@ -171,6 +172,39 @@ export const CheckboxPage = () => {
                 radius="sm"
               />
             </div>
+          ),
+          code: `<button>Checkbox</button>`,
+        },
+        {
+          title: "Checkbox Group",
+          component: (
+            <CheckboxGroup>
+              <Checkbox key={1} />
+              <Checkbox key={2} />
+              <Checkbox key={3} />
+            </CheckboxGroup>
+          ),
+          code: `<button>Checkbox</button>`,
+        },
+        {
+          title: "Horizontal",
+          component: (
+            <CheckboxGroup direction="horizontal">
+              <Checkbox key={1} />
+              <Checkbox key={2} />
+              <Checkbox key={3} />
+            </CheckboxGroup>
+          ),
+          code: `<button>Checkbox</button>`,
+        },
+        {
+          title: "Gap",
+          component: (
+            <CheckboxGroup gap="lg">
+              <Checkbox key={1} />
+              <Checkbox key={2} />
+              <Checkbox key={3} />
+            </CheckboxGroup>
           ),
           code: `<button>Checkbox</button>`,
         },

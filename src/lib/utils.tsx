@@ -1,5 +1,13 @@
 import { AccordionPage } from "../pages/components/accordion/AccordionPage";
+import { AvatarPage } from "../pages/components/avatar/AvatarPage";
+import { BadgePage } from "../pages/components/badge/BadgePage";
+import { ButtonPage } from "../pages/components/button/ButtonPage";
 import { CheckboxPage } from "../pages/components/checkbox/CheckboxPage";
+import { ChipPage } from "../pages/components/chip/ChipPage";
+import { CircularProgressPage } from "../pages/components/circular-progress/CircularProgressPage";
+import { ClipboardPage } from "../pages/components/clipboard/CircularProgressPage";
+import { ResizerPage } from "../pages/components/resizer/ResizerPage";
+import { SkeletonPage } from "../pages/components/skeleton/SkeletonPage";
 
 export const components = {
   accordion: {
@@ -8,31 +16,32 @@ export const components = {
   },
   avatar: {
     title: "Avatar",
-    page: AccordionPage,
+    page: AvatarPage,
   },
   badge: {
     title: "Badge",
-    page: AccordionPage,
+    page: BadgePage,
   },
   button: {
     title: "Button",
-    page: AccordionPage,
+    page: ButtonPage,
   },
   checkbox: {
     title: "Checkbox",
     page: CheckboxPage,
   },
+
   chip: {
     title: "Chip",
-    page: AccordionPage,
+    page: ChipPage,
   },
   circularProgress: {
     title: "Circular Progress",
-    page: AccordionPage,
+    page: CircularProgressPage,
   },
   clipboard: {
     title: "Clipboard",
-    page: AccordionPage,
+    page: ClipboardPage,
   },
   divider: {
     title: "Divider",
@@ -56,11 +65,11 @@ export const components = {
   },
   resizer: {
     title: "Resizer",
-    page: AccordionPage,
+    page: ResizerPage,
   },
   skeleton: {
     title: "Skeleton",
-    page: AccordionPage,
+    page: SkeletonPage,
   },
   slider: {
     title: "Slider",
