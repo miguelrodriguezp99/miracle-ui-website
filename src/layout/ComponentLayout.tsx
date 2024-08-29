@@ -2,6 +2,7 @@ import { Clipboard } from "@miracle-ui/clipboard";
 import { Tab, Tabs } from "@miracle-ui/react";
 import { CopyBlock, tomorrowNight } from "react-code-blocks";
 import Breadcrumb from "../components/breadcrumb/Breadcrumb";
+import { Link } from "react-router-dom";
 
 type Example = {
   title: string;
@@ -14,6 +15,8 @@ type Props = {
   description: string;
   examples: Example[];
   storybook?: string;
+  props?: string;
+  customWarning?: string;
 };
 
 export default function ComponentLayout({
@@ -21,6 +24,8 @@ export default function ComponentLayout({
   description,
   examples,
   storybook,
+  props = "min-h-[350px]",
+  customWarning,
 }: Props) {
   return (
     <>
@@ -91,6 +96,7 @@ export default function ComponentLayout({
                   @nextui-org/react
                 </span>
                 is already installed globally.
+                <span className="block mt-2 font-bold"> {customWarning}</span>
               </p>
             </div>
           </section>
@@ -100,7 +106,10 @@ export default function ComponentLayout({
           <section>
             {examples.map((example, index) => (
               <div key={index}>
-                <p id={example.title} className="text-3xl font-bold mt-8">
+                <p
+                  id={example.title.replace(/\s/g, "").toLowerCase()}
+                  className="text-3xl font-bold mt-8"
+                >
                   {example.title}
                 </p>
                 <div key={index} className="mt-3 w-full">
@@ -108,8 +117,8 @@ export default function ComponentLayout({
                     <Tabs variant="underlined">
                       <Tab title="Preview">
                         <div
-                          className="ml-3 border border-1 border-black/20 dark:border-pwhite/20 rounded-md px-20 py-5 mt-5
-                        flex items-center justify-center min-h-[350px] "
+                          className={`ml-3 border border-1 border-black/20 dark:border-pwhite/20 rounded-md px-20 py-5 mt-5
+                        flex items-center justify-center ${props}`}
                         >
                           {example.component}
                         </div>
@@ -117,8 +126,8 @@ export default function ComponentLayout({
 
                       <Tab title="Code">
                         <div
-                          className="ml-3 border border-1 border-pwhite/20 rounded-md mt-5 
-                        flex align-middle justify-center min-h-[350px]"
+                          className={`ml-3 border border-1 border-black/20 dark:border-pwhite/20 rounded-md px-20 py-5 mt-5
+                            flex items-center justify-center ${props}`}
                         >
                           <CopyBlock
                             wrapLongLines
@@ -149,20 +158,20 @@ export default function ComponentLayout({
         <div className="fixed">
           <p>On this page</p>
           <div className="flex flex-col">
-            <a
-              href="#installation"
-              className="pt-2 text-pblack/60 hover:text-pblack dark:text-pwhite/60 dark:hover:text-pwhite cursor-pointer transition-colors duration-300"
+            <Link
+              to="#installation"
+              className="anchor pt-2 text-pblack/60 hover:text-pblack dark:text-pwhite/60 dark:hover:text-pwhite cursor-pointer transition-colors duration-300"
             >
               Installation
-            </a>
+            </Link>
             {examples.map((example, index) => (
-              <a
-                href={`#${example.title}`}
+              <Link
+                to={`#${example.title.replace(/\s/g, "").toLowerCase()}`}
                 key={index}
-                className="pt-2 text-pblack/60 hover:text-pblack dark:text-pwhite/60 dark:hover:text-pwhite cursor-pointer transition-colors duration-300"
+                className="anchor pt-2 text-pblack/60 hover:text-pblack dark:text-pwhite/60 dark:hover:text-pwhite cursor-pointer transition-colors duration-300"
               >
                 {example.title}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
