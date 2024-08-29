@@ -8,6 +8,7 @@ import { CircularProgressPage } from "../pages/components/circular-progress/Circ
 import { ClipboardPage } from "../pages/components/clipboard/CircularProgressPage";
 import { DividerPage } from "../pages/components/divider/DividerPage";
 import { DropdownPage } from "../pages/components/dropdown/DropdownPage";
+import { InputPage } from "../pages/components/input/InputPage";
 import { ModalPage } from "../pages/components/modal/ModalPage";
 import { ProgressPage } from "../pages/components/progress/ProgressPage";
 import { ResizerPage } from "../pages/components/resizer/ResizerPage";
@@ -61,7 +62,7 @@ export const components = {
   },
   input: {
     title: "Input",
-    page: AccordionPage,
+    page: InputPage,
   },
   modal: {
     title: "Modal",
