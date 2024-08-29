@@ -9,12 +9,14 @@ import Layout from "./layout/Layout";
 import HomeLayout from "./layout/HomeLayout";
 import Colors from "./pages/colors/Colors";
 import ScrollToTop from "./hooks/useScrollToTop";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const componentArray = Object.values(components);
 
   return (
     <>
+      <Analytics />
       <ScrollToTop />
       <Routes>
         <Route element={<HomeLayout />}>
