@@ -22,7 +22,7 @@ export default function Navbar() {
           </div>
           <Anchor route="/docs/introduction">Docs</Anchor>
           <Anchor route="/components/Accordion">Components</Anchor>
-          <Anchor route="/docs/examples">Examples</Anchor>
+          {/* <Anchor route="/docs/examples">Examples</Anchor> */}
           <Anchor route="/colors">Colors</Anchor>
         </div>
 
