@@ -94,6 +94,10 @@ body {
   background-color: var(--bgcolor);
 }
 
+body * {
+  scroll-margin-top: 80px;
+}
+
 /* THEME TOGGLE TRANSITION */
 
 ::view-transition-new(root) {

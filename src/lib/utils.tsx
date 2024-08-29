@@ -6,8 +6,15 @@ import { CheckboxPage } from "../pages/components/checkbox/CheckboxPage";
 import { ChipPage } from "../pages/components/chip/ChipPage";
 import { CircularProgressPage } from "../pages/components/circular-progress/CircularProgressPage";
 import { ClipboardPage } from "../pages/components/clipboard/CircularProgressPage";
+import { DividerPage } from "../pages/components/divider/DividerPage";
+import { DropdownPage } from "../pages/components/dropdown/DropdownPage";
+import { ProgressPage } from "../pages/components/progress/ProgressPage";
 import { ResizerPage } from "../pages/components/resizer/ResizerPage";
 import { SkeletonPage } from "../pages/components/skeleton/SkeletonPage";
+import { SliderPage } from "../pages/components/slider/SliderPage";
+import { SpinnerPage } from "../pages/components/spinner/SpinerPage";
+import { SwitchPage } from "../pages/components/switch/SwitchPage";
+import { TabsPage } from "../pages/components/tabs/TabsPage";
 
 export const components = {
   accordion: {
@@ -45,11 +52,11 @@ export const components = {
   },
   divider: {
     title: "Divider",
-    page: AccordionPage,
+    page: DividerPage,
   },
   dropdown: {
     title: "Dropdown",
-    page: AccordionPage,
+    page: DropdownPage,
   },
   input: {
     title: "Input",
@@ -61,7 +68,7 @@ export const components = {
   },
   progress: {
     title: "Progress",
-    page: AccordionPage,
+    page: ProgressPage,
   },
   resizer: {
     title: "Resizer",
@@ -73,18 +80,18 @@ export const components = {
   },
   slider: {
     title: "Slider",
-    page: AccordionPage,
+    page: SliderPage,
   },
   spinner: {
     title: "Spinner",
-    page: AccordionPage,
+    page: SpinnerPage,
   },
   switch: {
     title: "Switch",
-    page: AccordionPage,
+    page: SwitchPage,
   },
   tabs: {
     title: "Tabs",
-    page: AccordionPage,
+    page: TabsPage,
   },
 };
