@@ -1,51 +1,29 @@
-# React + TypeScript + Vite
+# Miracle UI Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://github.com/miguelrodriguezp99/miracle-ui/assets/72866796/33c42d25-c3cf-405a-a99f-c1196a08e428" alt="Miracle UI Logo">
+</p>
 
-Currently, two official plugins are available:
+## Miracle UI Documentation Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to the official documentation website for **Miracle UI**! This site serves as the central hub for everything you need to know about using the Miracle UI component library.
 
-## Expanding the ESLint configuration
+### What You Will Find Here
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Component Documentation**: Detailed guides and examples for every component included in Miracle UI. Each component comes with comprehensive documentation that includes usage instructions, available props, and visual examples to help you implement it smoothly in your projects.
 
-- Configure the top-level `parserOptions` property like this:
+- **Color Palette**: Discover the color palette used in Miracle UI. You can find predefined color variables that ensure a consistent look and feel across all components. These colors are easily accessible and can be customized to fit your design needs.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Installation Guide**: Learn how to quickly get started with Miracle UI. The installation guide provides step-by-step instructions on setting up Miracle UI in your React project using your preferred package manager.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **About the Project**: Get insights into the motivation behind Miracle UI, the goals of the project, and the development process. This section also highlights the learning objectives that drove the creation of this library.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Component Previews**: View live previews of each component to see them in action. These previews allow you to explore the look and functionality of components before implementing them in your project.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-"# miracle-ui-website" 
+### Built with React and Tailwind CSS
+
+This documentation website is built using **React** and **Tailwind CSS**. React provides the flexibility and performance needed to create a dynamic and responsive user interface, while Tailwind CSS ensures a modern and minimalist design that is easy to customize.
+
+Explore the documentation, experiment with the components, and start building amazing web applications with **Miracle UI**!
+
+---
