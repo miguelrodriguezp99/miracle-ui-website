@@ -127,7 +127,7 @@ export default function ComponentLayout({
                       <Tab title="Code">
                         <div
                           className={`ml-3 border border-1 border-black/20 dark:border-pwhite/20 rounded-md mt-5
-                            flex align-middle justify-center min-h-[200px] max-h-[350px] ${props}`}
+                            flex align-middle justify-center min-h-[200px] max-h-[350px] `}
                         >
                           <CopyBlock
                             wrapLongLines

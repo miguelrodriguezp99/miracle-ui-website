@@ -2,6 +2,7 @@ import { Switch } from "@miracle-ui/react";
 import MoonIcon2 from "../../../icons/MoonIcon2";
 import SunIcon from "../../../icons/SunIcon";
 import ComponentLayout from "../../../layout/ComponentLayout";
+import codeblock from "./Code";
 
 export const SwitchPage = () => {
   // Estados independientes para cada Switch
@@ -15,17 +16,17 @@ export const SwitchPage = () => {
         {
           title: "Usage",
           component: <Switch id="check" />,
-          code: `<Switch value={checked1} setValue={setChecked1} />`,
+          code: codeblock.usage,
         },
         {
           title: "Disabled",
           component: <Switch isDisabled id="check2" />,
-          code: `<Switch value={checked2} setValue={setChecked2} />`,
+          code: codeblock.disabled,
         },
         {
           title: "Default Selected",
           component: <Switch defaultSelected id="check3" />,
-          code: `<Switch value={checked2} setValue={setChecked2} />`,
+          code: codeblock.defaultSelected,
         },
         {
           title: "Custom Thumb Icon",
@@ -37,7 +38,7 @@ export const SwitchPage = () => {
               id="check4"
             />
           ),
-          code: `<Switch value={checked2} setValue={setChecked2} />`,
+          code: codeblock.customThumbIcon,
         },
         {
           title: "Start and End Content",
@@ -48,12 +49,12 @@ export const SwitchPage = () => {
               id="check5"
             />
           ),
-          code: `<Switch value={checked2} setValue={setChecked2} />`,
+          code: codeblock.startAndEndContent,
         },
         {
           title: "With Label",
           component: <Switch id="check6">Dark Mode</Switch>,
-          code: `<Switch value={checked2} setValue={setChecked2} />`,
+          code: codeblock.withLabel,
         },
         {
           title: "With Custom Label",
@@ -71,7 +72,7 @@ export const SwitchPage = () => {
               Dark Mode
             </Switch>
           ),
-          code: `<Switch value={checked2} setValue={setChecked2} />`,
+          code: codeblock.withCustomLabel,
         },
         {
           title: "Custom",
@@ -84,7 +85,7 @@ export const SwitchPage = () => {
               customThumbColor={"black"}
             />
           ),
-          code: `<Switch value={checked2} setValue={setChecked2} />`,
+          code: codeblock.custom,
         },
         {
           title: "Sizes",
@@ -95,7 +96,7 @@ export const SwitchPage = () => {
               <Switch id="check11" size="lg" />
             </div>
           ),
-          code: `<Switch value={checked1} setValue={setChecked1} />`,
+          code: codeblock.sizes,
         },
       ]}
     />

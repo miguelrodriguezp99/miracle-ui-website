@@ -1,5 +1,6 @@
 import ComponentLayout from "../../../layout/ComponentLayout";
-import { CircularProgress, Spinner } from "@miracle-ui/react";
+import { Spinner } from "@miracle-ui/react";
+import codeblock from "./Code";
 
 export const SpinnerPage = () => {
   return (
@@ -10,33 +11,33 @@ export const SpinnerPage = () => {
         {
           title: "Usage",
           component: <Spinner color="default" />,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "With Label",
           component: <Spinner color="default" label="Loading..." />,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.withLabel,
         },
         {
           title: "With Label Color",
           component: (
             <Spinner color="default" label="Loading..." labelColor="#d1d130" />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.withLabelColor,
         },
         {
           title: "Colors",
           component: (
             <div className="grid grid-cols-2 md:grid-cols-3 gap-10 items-center">
-              <CircularProgress color="default" />
-              <CircularProgress color="primary" />
-              <CircularProgress color="secondary" />
-              <CircularProgress color="success" />
-              <CircularProgress color="danger" />
-              <CircularProgress color="warning" />
+              <Spinner color="default" />
+              <Spinner color="primary" />
+              <Spinner color="secondary" />
+              <Spinner color="success" />
+              <Spinner color="danger" />
+              <Spinner color="warning" />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.colors,
         },
       ]}
     />

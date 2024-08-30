@@ -3,6 +3,7 @@ import { UserIcon } from "../../../icons/UserIcon";
 import { VolumeHighIcon } from "../../../icons/VolumeHighIcon";
 import ComponentLayout from "../../../layout/ComponentLayout";
 import { Tab, Tabs } from "@miracle-ui/react";
+import codeblock from "./Code";
 
 export const TabsPage = () => {
   const contentStyles = {
@@ -35,7 +36,7 @@ export const TabsPage = () => {
               <Tab title="Links" key="links"></Tab>
             </Tabs>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "With Content",
@@ -67,7 +68,7 @@ export const TabsPage = () => {
               </Tabs>
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.withContent,
         },
         {
           title: "With Icons",
@@ -90,7 +91,7 @@ export const TabsPage = () => {
                   </div>
                 }
                 key="photos"
-              ></Tab>
+              />
               <Tab
                 title={
                   <div
@@ -130,7 +131,7 @@ export const TabsPage = () => {
               ></Tab>
             </Tabs>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.withIcons,
         },
         {
           title: "Only Icons",
@@ -190,7 +191,7 @@ export const TabsPage = () => {
               ></Tab>
             </Tabs>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.onlyIcons,
         },
         {
           title: "Underlined",
@@ -201,7 +202,7 @@ export const TabsPage = () => {
               <Tab title="Links" key="links"></Tab>
             </Tabs>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.underlined,
         },
         {
           title: "Disabled",
@@ -212,7 +213,7 @@ export const TabsPage = () => {
               <Tab title="Links" key="links"></Tab>
             </Tabs>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.disabled,
         },
         {
           title: "Vertical",
@@ -255,7 +256,7 @@ export const TabsPage = () => {
               </Tabs>
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.vertical,
         },
       ]}
     />
