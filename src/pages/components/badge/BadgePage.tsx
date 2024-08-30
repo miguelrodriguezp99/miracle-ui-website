@@ -1,5 +1,6 @@
 import ComponentLayout from "../../../layout/ComponentLayout";
 import { Avatar, Badge } from "@miracle-ui/react";
+import codeblock from "./Code";
 
 export const BadgePage = () => {
   return (
@@ -14,7 +15,7 @@ export const BadgePage = () => {
               <Avatar radius="lg" />
             </Badge>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "Circular",
@@ -23,7 +24,7 @@ export const BadgePage = () => {
               <Avatar radius="full" />
             </Badge>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.circular,
         },
         {
           title: "Positions",
@@ -43,7 +44,7 @@ export const BadgePage = () => {
               </Badge>
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.positions,
         },
         {
           title: "Variants",
@@ -75,7 +76,7 @@ export const BadgePage = () => {
               </Badge>
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.variants,
         },
         {
           title: "Colors",
@@ -104,7 +105,7 @@ export const BadgePage = () => {
               </Badge>
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.colors,
         },
       ]}
     />

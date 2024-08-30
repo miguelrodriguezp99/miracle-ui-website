@@ -1,5 +1,6 @@
 import ComponentLayout from "../../../layout/ComponentLayout";
 import { Resizer } from "@miracle-ui/react";
+import codeblock from "./Code";
 
 export const ResizerPage = () => {
   return (
@@ -44,7 +45,7 @@ export const ResizerPage = () => {
               </Resizer>
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
 
         {
@@ -84,7 +85,7 @@ export const ResizerPage = () => {
               </Resizer>
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.vertical,
         },
         {
           title: "Custom",
@@ -135,7 +136,7 @@ export const ResizerPage = () => {
               </Resizer>
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.custom,
         },
       ]}
     />

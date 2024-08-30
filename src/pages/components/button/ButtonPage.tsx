@@ -2,6 +2,7 @@ import { Button, ButtonGroup } from "@miracle-ui/react";
 import ComponentLayout from "../../../layout/ComponentLayout";
 import { UserIcon } from "../../../icons/UserIcon";
 import { CameraIcon } from "../../../icons/CameraIcon";
+import codeblock from "./Code";
 
 export const ButtonPage = () => {
   return (
@@ -12,14 +13,14 @@ export const ButtonPage = () => {
         {
           title: "Usage",
           component: <Button color="default" variant="bordered" radius="md" />,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "Disabled",
           component: (
             <Button color="default" variant="bordered" radius="md" isDisabled />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.disabled,
         },
         {
           title: "Disabled Ripple",
@@ -31,7 +32,7 @@ export const ButtonPage = () => {
               disabledRipple
             />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.disabledRipple,
         },
         {
           title: "With Start Content",
@@ -45,7 +46,7 @@ export const ButtonPage = () => {
               Delete user
             </Button>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.startContent,
         },
         {
           title: "With End Content",
@@ -54,7 +55,7 @@ export const ButtonPage = () => {
               Take a photo
             </Button>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.endContent,
         },
         {
           title: "Icon Only",
@@ -63,7 +64,7 @@ export const ButtonPage = () => {
               <CameraIcon />
             </Button>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.iconOnly,
         },
         {
           title: "Colors",
@@ -77,7 +78,7 @@ export const ButtonPage = () => {
               <Button color="danger" children="Danger" />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.colors,
         },
         {
           title: "Variants",
@@ -92,7 +93,7 @@ export const ButtonPage = () => {
               <Button color="primary" children="Shadow" variant="shadow" />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.variants,
         },
         {
           title: "Custom Variants",
@@ -116,7 +117,7 @@ export const ButtonPage = () => {
               />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.customVariants,
         },
         {
           title: "Button Group",
@@ -127,7 +128,7 @@ export const ButtonPage = () => {
               <Button label="Three" radius="none" color="primary" size="md" />
             </ButtonGroup>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.buttonGroup,
         },
       ]}
     />

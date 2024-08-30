@@ -126,13 +126,14 @@ export default function ComponentLayout({
 
                       <Tab title="Code">
                         <div
-                          className={`ml-3 border border-1 border-black/20 dark:border-pwhite/20 rounded-md px-20 py-5 mt-5
-                            flex items-center justify-center ${props}`}
+                          className={`ml-3 border border-1 border-black/20 dark:border-pwhite/20 rounded-md mt-5
+                            flex align-middle justify-center min-h-[200px] max-h-[350px] ${props}`}
                         >
                           <CopyBlock
                             wrapLongLines
                             customStyle={{
                               maxHeight: "500px",
+                              minHeight: "auto",
                               overflow: "auto",
                               width: "100%",
                               scrollbarWidth: "thin",

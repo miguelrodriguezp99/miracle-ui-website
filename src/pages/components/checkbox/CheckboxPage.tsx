@@ -1,6 +1,7 @@
 import { Checkbox } from "@miracle-ui/checkbox";
 import ComponentLayout from "../../../layout/ComponentLayout";
 import { CheckboxGroup } from "@miracle-ui/react";
+import codeblock from "./Code";
 
 export const CheckboxPage = () => {
   return (
@@ -17,26 +18,26 @@ export const CheckboxPage = () => {
               textSize="16px"
             />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "No Label",
           component: <Checkbox text="" size="sm" textSize="16px" />,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.noLabel,
         },
         {
           title: "Disabled",
           component: (
             <Checkbox text="Disabled" isDisabled size="sm" textSize="16px" />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.disabled,
         },
         {
           title: "Default Checked",
           component: (
             <Checkbox text="Checked" isChecked size="sm" textSize="16px" />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.defaultChecked,
         },
         {
           title: "Colors",
@@ -101,7 +102,7 @@ export const CheckboxPage = () => {
               />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.colors,
         },
         {
           title: "Radius",
@@ -141,7 +142,7 @@ export const CheckboxPage = () => {
               />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.radius,
         },
         {
           title: "Sizes",
@@ -173,7 +174,7 @@ export const CheckboxPage = () => {
               />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.sizes,
         },
         {
           title: "Checkbox Group",
@@ -184,7 +185,7 @@ export const CheckboxPage = () => {
               <Checkbox key={3} />
             </CheckboxGroup>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.checkboxGroup,
         },
         {
           title: "Horizontal",
@@ -195,7 +196,7 @@ export const CheckboxPage = () => {
               <Checkbox key={3} />
             </CheckboxGroup>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.checkboxGroupHorizontal,
         },
         {
           title: "Gap",
@@ -206,7 +207,7 @@ export const CheckboxPage = () => {
               <Checkbox key={3} />
             </CheckboxGroup>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.checkboxGroupGap,
         },
       ]}
     />

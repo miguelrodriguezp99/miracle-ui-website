@@ -1,5 +1,6 @@
 import ComponentLayout from "../../../layout/ComponentLayout";
 import { CircularProgress } from "@miracle-ui/react";
+import codeblock from "./Code";
 
 export const CircularProgressPage = () => {
   return (
@@ -10,13 +11,13 @@ export const CircularProgressPage = () => {
         {
           title: "Usage",
           component: <CircularProgress color="primary" />,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
 
         {
           title: "With Label",
           component: <CircularProgress color="primary" label="Loading..." />,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.withLabel,
         },
 
         {
@@ -24,7 +25,7 @@ export const CircularProgressPage = () => {
           component: (
             <CircularProgress color="primary" label="Loading..." isDisabled />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.disabled,
         },
 
         {
@@ -36,7 +37,7 @@ export const CircularProgressPage = () => {
               <CircularProgress color="primary" size="lg" />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.sizes,
         },
 
         {
@@ -44,7 +45,7 @@ export const CircularProgressPage = () => {
           component: (
             <CircularProgress color="primary" size="sm" customColor="red" />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.customColor,
         },
       ]}
     />

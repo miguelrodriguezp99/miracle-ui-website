@@ -5,7 +5,7 @@ import { ButtonPage } from "../pages/components/button/ButtonPage";
 import { CheckboxPage } from "../pages/components/checkbox/CheckboxPage";
 import { ChipPage } from "../pages/components/chip/ChipPage";
 import { CircularProgressPage } from "../pages/components/circular-progress/CircularProgressPage";
-import { ClipboardPage } from "../pages/components/clipboard/CircularProgressPage";
+import { ClipboardPage } from "../pages/components/clipboard/ClipboardPage";
 import { DividerPage } from "../pages/components/divider/DividerPage";
 import { DropdownPage } from "../pages/components/dropdown/DropdownPage";
 import { InputPage } from "../pages/components/input/InputPage";

@@ -1,5 +1,6 @@
 import ComponentLayout from "../../../layout/ComponentLayout";
 import { Clipboard } from "@miracle-ui/react";
+import codeblock from "./Code";
 
 export const ClipboardPage = () => {
   return (
@@ -10,7 +11,7 @@ export const ClipboardPage = () => {
         {
           title: "Usage",
           component: <Clipboard>npm install @miracle-ui/react</Clipboard>,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "Multiline",
@@ -21,7 +22,7 @@ export const ClipboardPage = () => {
               <span>npm install @miracle-ui/react</span>
             </Clipboard>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.multiline,
         },
         {
           title: "Bordered",
@@ -30,7 +31,7 @@ export const ClipboardPage = () => {
               npm install @miracle-ui/react
             </Clipboard>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.bordered,
         },
         {
           title: "Solid",
@@ -39,7 +40,7 @@ export const ClipboardPage = () => {
               npm install @miracle-ui/react
             </Clipboard>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.solid,
         },
         {
           title: "Custom Symbol",
@@ -48,14 +49,14 @@ export const ClipboardPage = () => {
               npm install @miracle-ui/react
             </Clipboard>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.customSymbol,
         },
         {
           title: "Hidden Button",
           component: (
             <Clipboard hideButton>npm install @miracle-ui/react</Clipboard>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.hiddenButton,
         },
         {
           title: "Colors",
@@ -93,7 +94,7 @@ export const ClipboardPage = () => {
               />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.colors,
         },
         {
           title: "Variants",
@@ -109,7 +110,7 @@ export const ClipboardPage = () => {
               <Clipboard color="primary" children="Shadow" variant="shadow" />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.variants,
         },
         {
           title: "Custom",
@@ -127,7 +128,7 @@ export const ClipboardPage = () => {
               npm install @miracle-ui/react
             </Clipboard>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.custom,
         },
       ]}
     />

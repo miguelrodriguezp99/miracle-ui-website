@@ -11,6 +11,7 @@ import { CopyLinkIcon } from "../../../icons/CopyLinkIcon";
 import { EditFileIcon } from "../../../icons/EditFileIcon";
 import { DeleteFileIcon } from "../../../icons/DeleteFileIcon";
 import MoonIcon from "../../../icons/MoonIcon";
+import codeblock from "./Code";
 
 type DropdownPositions =
   | "top"
@@ -72,7 +73,7 @@ export const DropdownPage = () => {
               </DropdownMenu>
             </Dropdown>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "With Start Content",
@@ -120,7 +121,7 @@ export const DropdownPage = () => {
               </DropdownMenu>
             </Dropdown>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.startContent,
         },
         {
           title: "With End Content",
@@ -168,7 +169,7 @@ export const DropdownPage = () => {
               </DropdownMenu>
             </Dropdown>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.endContent,
         },
         {
           title: "Positions",
@@ -222,7 +223,7 @@ export const DropdownPage = () => {
               </div>
             </>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.positions,
         },
 
         {
@@ -276,7 +277,7 @@ export const DropdownPage = () => {
               </DropdownMenu>
             </Dropdown>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.iconOnly,
         },
       ]}
     />

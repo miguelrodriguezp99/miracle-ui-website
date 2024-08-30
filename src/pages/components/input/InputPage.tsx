@@ -1,5 +1,6 @@
 import { Input } from "@miracle-ui/react";
 import ComponentLayout from "../../../layout/ComponentLayout";
+import codeblock from "./Code";
 
 export const InputPage = () => {
   return (
@@ -12,7 +13,7 @@ export const InputPage = () => {
           component: (
             <Input size="medium" variant="flat" type="text" text="Email" />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "Placeholder",
@@ -25,7 +26,7 @@ export const InputPage = () => {
               placeholder="Enter your email"
             />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.placeholder,
         },
         {
           title: "Disabled",
@@ -38,7 +39,7 @@ export const InputPage = () => {
               isDisabled
             />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.disabled,
         },
         {
           title: "Readonly",
@@ -51,7 +52,7 @@ export const InputPage = () => {
               readOnly
             />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.readonly,
         },
         {
           title: "Variants",
@@ -68,7 +69,7 @@ export const InputPage = () => {
               />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.variants,
         },
 
         {
@@ -119,7 +120,7 @@ export const InputPage = () => {
               />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.colors,
         },
         {
           title: "Sizes",
@@ -148,7 +149,7 @@ export const InputPage = () => {
               />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.sizes,
         },
         {
           title: "Customs",
@@ -183,7 +184,7 @@ export const InputPage = () => {
               />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.customs,
         },
       ]}
     />

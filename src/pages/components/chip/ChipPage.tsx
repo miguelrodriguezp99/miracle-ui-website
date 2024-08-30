@@ -1,6 +1,7 @@
 import { UserIcon } from "../../../icons/UserIcon";
 import ComponentLayout from "../../../layout/ComponentLayout";
 import { Chip } from "@miracle-ui/react";
+import codeblock from "./Code";
 
 export const ChipPage = () => {
   return (
@@ -11,17 +12,17 @@ export const ChipPage = () => {
         {
           title: "Usage",
           component: <Chip>My Chip</Chip>,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "Start Content",
           component: <Chip startContent={<UserIcon />}>My Chip</Chip>,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.startContent,
         },
         {
           title: "End Content",
           component: <Chip endContent={<UserIcon />}>My Chip</Chip>,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.endContent,
         },
         {
           title: "Clossable",
@@ -34,7 +35,7 @@ export const ChipPage = () => {
               My Chip
             </Chip>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.Clossable,
         },
         {
           title: "Colors",
@@ -48,7 +49,7 @@ export const ChipPage = () => {
               <Chip color="danger" children="Danger" />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.colors,
         },
         {
           title: "Variants",
@@ -63,7 +64,7 @@ export const ChipPage = () => {
               <Chip color="primary" children="Shadow" variant="shadow" />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.variants,
         },
         {
           title: "Custom",
@@ -77,7 +78,7 @@ export const ChipPage = () => {
               My Chip
             </Chip>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.custom,
         },
       ]}
     />

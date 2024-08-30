@@ -1,5 +1,6 @@
 import { Button, Modal } from "@miracle-ui/react";
 import ComponentLayout from "../../../layout/ComponentLayout";
+import codeblock from "./Code";
 
 type ModalSizes =
   | "xs"
@@ -94,7 +95,7 @@ export const ModalPage = () => {
               )}
             </Modal>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "Backdrop Blur",
@@ -138,7 +139,7 @@ export const ModalPage = () => {
               )}
             </Modal>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.backdropBlur,
         },
         {
           title: "Backdrop Transparent",
@@ -182,13 +183,13 @@ export const ModalPage = () => {
               )}
             </Modal>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.backdropTransparent,
         },
         {
-          title: "Backdrop Transparent",
+          title: "Custom Background Color",
           component: (
             <Modal
-              backdrop="transparent"
+              backgroundColor="#3C3C3C90"
               button={
                 <Button radius="md" color="default" variant="bordered">
                   Open Modal
@@ -226,7 +227,7 @@ export const ModalPage = () => {
               )}
             </Modal>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.customBackgroundColor,
         },
         {
           title: "Sizes",
@@ -280,7 +281,7 @@ export const ModalPage = () => {
               ))}
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.sizes,
         },
         {
           title: "Placements",
@@ -334,7 +335,7 @@ export const ModalPage = () => {
               ))}
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.placements,
         },
       ]}
     />

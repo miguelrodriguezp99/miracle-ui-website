@@ -1,6 +1,7 @@
 import { Card } from "@miracle-ui/card";
 import ComponentLayout from "../../../layout/ComponentLayout";
 import { Skeleton } from "@miracle-ui/react";
+import codeblock from "./Code";
 
 export const SkeletonPage = () => {
   return (
@@ -65,7 +66,7 @@ export const SkeletonPage = () => {
               </div>
             </Card>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "Secondary",
@@ -122,7 +123,7 @@ export const SkeletonPage = () => {
               </div>
             </Card>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.secondary,
         },
       ]}
     />

@@ -1,5 +1,6 @@
 import ComponentLayout from "../../../layout/ComponentLayout";
 import { Avatar, AvatarGroup } from "@miracle-ui/react";
+import codeblock from "./Code";
 
 export const AvatarPage = () => {
   return (
@@ -10,19 +11,19 @@ export const AvatarPage = () => {
         {
           title: "Usage",
           component: <Avatar />,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "With Text",
           component: <Avatar name="John Doe" />,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.withLabel,
         },
         {
           title: "With Image",
           component: (
             <Avatar avatar="https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.withImage,
         },
         {
           title: "With Border",
@@ -32,7 +33,7 @@ export const AvatarPage = () => {
               avatar="https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.bordered,
         },
         {
           title: "Disabled",
@@ -42,7 +43,7 @@ export const AvatarPage = () => {
               avatar="https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.disabled,
         },
         {
           title: "Group Horizontal",
@@ -62,7 +63,7 @@ export const AvatarPage = () => {
               />
             </AvatarGroup>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.groupHorizontal,
         },
         {
           title: "Group Vertical",
@@ -82,7 +83,7 @@ export const AvatarPage = () => {
               />
             </AvatarGroup>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.groupVertical,
         },
         {
           title: "Group Disabled",
@@ -102,7 +103,7 @@ export const AvatarPage = () => {
               />
             </AvatarGroup>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.groupDisabled,
         },
         {
           title: "Sizes",
@@ -113,7 +114,7 @@ export const AvatarPage = () => {
               <Avatar size="lg" name="Large" bordered />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.sizes,
         },
         {
           title: "Colors",
@@ -127,7 +128,7 @@ export const AvatarPage = () => {
               <Avatar size="md" name="John Doe" color="danger" />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.colors,
         },
         {
           title: "Radius",
@@ -141,7 +142,7 @@ export const AvatarPage = () => {
               <Avatar size="md" name="Full" radius="full" />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.radius,
         },
       ]}
     />

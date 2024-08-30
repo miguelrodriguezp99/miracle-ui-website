@@ -1,5 +1,6 @@
 import { Progress } from "@miracle-ui/react";
 import ComponentLayout from "../../../layout/ComponentLayout";
+import codeblock from "./Code";
 
 export const ProgressPage = () => {
   return (
@@ -10,7 +11,7 @@ export const ProgressPage = () => {
         {
           title: "Usage",
           component: <Progress color="primary" />,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "With Label",
@@ -22,7 +23,7 @@ export const ProgressPage = () => {
               value={30}
             />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.withLabel,
         },
         {
           title: "With Value Label",
@@ -35,7 +36,7 @@ export const ProgressPage = () => {
               value={18500}
             />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.withLabelValue,
         },
         {
           title: "With Percentage Label",
@@ -48,7 +49,7 @@ export const ProgressPage = () => {
               showPercentageLabel
             />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.withPercentageLabel,
         },
         {
           title: "With Percentage Label and Value Label",
@@ -61,12 +62,12 @@ export const ProgressPage = () => {
               showPercentageLabel
             />
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.withPercentageLabelAndValue,
         },
         {
           title: "Indeterminate",
           component: <Progress color="primary" isIndeterminate />,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.indeterminate,
         },
         {
           title: "Colors",
@@ -80,7 +81,7 @@ export const ProgressPage = () => {
               <Progress color="danger" />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.colors,
         },
         {
           title: "Sizes",
@@ -91,7 +92,7 @@ export const ProgressPage = () => {
               <Progress color="primary" size="lg" />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.sizes,
         },
       ]}
     />

@@ -1,5 +1,6 @@
 import { Divider } from "@miracle-ui/react";
 import ComponentLayout from "../../../layout/ComponentLayout";
+import codeblock from "./Code";
 
 export const DividerPage = () => {
   return (
@@ -10,7 +11,7 @@ export const DividerPage = () => {
         {
           title: "Usage",
           component: <Divider color="default" />,
-          code: `<button>Checkbox</button>`,
+          code: codeblock.usage,
         },
         {
           title: "Custom Color",
@@ -24,7 +25,7 @@ export const DividerPage = () => {
               <Divider color="danger" />
             </div>
           ),
-          code: `<button>Checkbox</button>`,
+          code: codeblock.colors,
         },
       ]}
     />

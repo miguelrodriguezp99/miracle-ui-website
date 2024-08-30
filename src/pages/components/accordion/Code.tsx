@@ -1,6 +1,6 @@
 const codeblock = {
   usage: `
-import { Accordion, AccordionItem } from "@miracle-ui/react";
+import { Accordion, AccordionItem } from "@miracle-ui/accordion";
 
 const Demo = () => {
   return (
@@ -27,7 +27,7 @@ const Demo = () => {
 export default Demo;
 `,
   withLabel: `
-import { Accordion, AccordionItem } from "@miracle-ui/react";
+import { Accordion, AccordionItem } from "@miracle-ui/accordion";
 
 const Demo = () => {
   return (
@@ -56,7 +56,7 @@ const Demo = () => {
 
 export default Demo;`,
   compact: `
-import { Accordion, AccordionItem } from "@miracle-ui/react";
+import { Accordion, AccordionItem } from "@miracle-ui/accordion";
 
 const Demo = () => {
   return (
@@ -82,7 +82,7 @@ const Demo = () => {
 
 export default Demo;`,
   multipleSelection: `
-import { Accordion, AccordionItem } from "@miracle-ui/react";
+import { Accordion, AccordionItem } from "@miracle-ui/accordion";
 
 const Demo = () => {
   return (
@@ -108,7 +108,7 @@ const Demo = () => {
 
 export default Demo;`,
   splitted: `
-import { Accordion, AccordionItem } from "@miracle-ui/react";
+import { Accordion, AccordionItem } from "@miracle-ui/accordion";
 
 const Demo = () => {
   return (
@@ -134,7 +134,7 @@ const Demo = () => {
 
 export default Demo;`,
   bordered: `
-import { Accordion, AccordionItem } from "@miracle-ui/react";
+import { Accordion, AccordionItem } from "@miracle-ui/accordion";
 
 const Demo = () => {
   return (
@@ -160,7 +160,7 @@ const Demo = () => {
 
 export default Demo;`,
   shadow: `
-import { Accordion, AccordionItem } from "@miracle-ui/react";
+import { Accordion, AccordionItem } from "@miracle-ui/accordion";
 
 const Demo = () => {
   return (
@@ -187,7 +187,7 @@ const Demo = () => {
 export default Demo;`,
 
   custom: `
-import { Accordion, AccordionItem } from "@miracle-ui/react";
+import { Accordion, AccordionItem } from "@miracle-ui/accordion";
 
 const Demo = () => {
   return (
