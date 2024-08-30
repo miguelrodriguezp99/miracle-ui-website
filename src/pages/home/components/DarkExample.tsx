@@ -14,7 +14,7 @@ const DarkExample = () => {
         <section
           className="text-pblack dark:text-pwhite h-full text-center 
           flex flex-col gap-10 lg:flex-row justify-center
-          w-[100%]  pt-20"
+          w-[100%] max-w-[1350px] mx-auto px-8 pt-20"
         >
           <div className="flex flex-col gap-6 w-full lg:w-[70%]">
             <div className="text-center lg:text-start ">

@@ -5,11 +5,11 @@ import codeblock from "./Code";
 const CodeExample = () => {
   return (
     <>
-      <div className="h-auto bg-white dark:bg-pblack relative w-full z-40 pb-20">
-        <div className="absolute top-[45%] left-[15%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
-        <div className="hidden lg:flex absolute top-[50%] left-[75%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
+      <div className="h-auto bg-white dark:bg-pblack relative w-full z-40 pb-20 ">
+        <div className="absolute top-[45%] left-[25%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
+        <div className="hidden lg:flex absolute top-[50%] left-[67%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div>
 
-        <section className="text-pblack dark:text-pwhite text-center flex flex-col gap-10 lg:flex-row w-full pt-20">
+        <section className="text-pblack dark:text-pwhite text-center flex flex-col gap-10 lg:flex-row max-w-[1350px] mx-auto px-8 pt-20 ">
           <div className="flex flex-col gap-6 w-full lg:mt-12">
             <div className="text-center lg:text-start">
               <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold">

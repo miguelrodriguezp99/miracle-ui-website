@@ -39,7 +39,7 @@ const AccesibilityExample = () => {
   return (
     <>
       <section className="text-pblack dark:text-pwhite text-center flex flex-col gap-10 lg:flex-row w-full] pb-20 pt-20 relative">
-        <div className="flex flex-col gap-6 w-full items-center lg:items-start">
+        <div className="flex flex-col gap-6 w-full items-center lg:items-start max-w-[1350px] mx-auto px-8">
           <div className="lg:text-start w-full md:w-[65%]">
             <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold">
               Built-in{" "}

@@ -6,12 +6,11 @@ export default function HomeLayout() {
   return (
     <div className="font-geist text-sm">
       <Navbar />
-      <div className="px-8">
-        <div className="bg-white dark:bg-background font-geist text-sm h-full max-w-[1350px] mx-auto">
-          <Outlet />
-          <Footer />
-        </div>
+      <div className="bg-white dark:bg-background font-geist text-sm h-full ">
+        <Outlet />
+        <Footer />
       </div>
     </div>
   );
 }
+//max-w-[1350px] mx-auto px-8
