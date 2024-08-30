@@ -17,6 +17,9 @@ export default function Aside() {
           <Anchor underlined props="py-1" route="/docs/installation">
             Installation
           </Anchor>
+          <Anchor underlined props="py-1" route="/docs/darkmode">
+            Dark Mode
+          </Anchor>
           <Anchor underlined props="py-1" route="/docs/about">
             About
           </Anchor>
@@ -30,7 +33,9 @@ export default function Aside() {
             <Anchor
               underlined
               key={index}
-              route={`components/${component.title}`}
+              route={`components/${component.title
+                .toLowerCase()
+                .replace(/\s/g, "")}`}
               props="py-1"
             >
               {component.title}

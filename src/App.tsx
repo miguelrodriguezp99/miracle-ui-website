@@ -10,6 +10,7 @@ import HomeLayout from "./layout/HomeLayout";
 import Colors from "./pages/colors/Colors";
 import ScrollToTop from "./hooks/useScrollToTop";
 import { Analytics } from "@vercel/analytics/react";
+import DarkMode from "./pages/darkmode/DarkMode";
 
 function App() {
   const componentArray = Object.values(components);
@@ -28,7 +29,9 @@ function App() {
           {componentArray.map((component, index) => (
             <Route
               key={index}
-              path={`/components/${component.title}`}
+              path={`/components/${component.title
+                .toLowerCase()
+                .replace(/\s/g, "")}`}
               element={<component.page />}
             />
           ))}
@@ -36,6 +39,8 @@ function App() {
           <Route path="/docs/" element={<Introduction />} />
           <Route path="/docs/introduction" element={<Introduction />} />
           <Route path="/docs/installation" element={<Installation />} />
+          <Route path="/docs/darkmode" element={<DarkMode />} />
+
           <Route path="/docs/about" element={<About />} />
           <Route path="/docs/*" element={<About />} />
         </Route>

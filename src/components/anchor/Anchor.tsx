@@ -12,7 +12,9 @@ export default function Anchor({ children, underlined, props, route }: Props) {
   const navigate = useNavigate();
 
   // Codifica el nombre del children para que coincida con la codificación de la URL
-  const encodedChildren = encodeURIComponent(children.toLowerCase().trim());
+  const encodedChildren = encodeURIComponent(
+    children.toLowerCase().replace(/\s/g, "")
+  );
 
   const isActive = location.pathname
     .toLowerCase()

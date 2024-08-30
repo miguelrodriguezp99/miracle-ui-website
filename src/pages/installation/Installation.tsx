@@ -7,7 +7,7 @@ import { CopyBlock, tomorrowNight } from "react-code-blocks";
 import { Clipboard } from "@miracle-ui/clipboard";
 
 const Installation = () => {
-  const { handleClick } = useNav("/docs/about");
+  const { handleClick } = useNav("/docs/darkmode");
 
   return (
     <>
@@ -222,7 +222,9 @@ const Installation = () => {
           hover:bg-pblack/10 dark:hover:bg-pwhite/20"
           >
             <div className="flex items-center gap-2 text-center">
-              <p className="text-pblack dark:text-pwhite text-[14px]">About</p>
+              <p className="text-pblack dark:text-pwhite text-[14px]">
+                Dark Mode
+              </p>
               <BreadcrumbIcon />
             </div>
           </button>
