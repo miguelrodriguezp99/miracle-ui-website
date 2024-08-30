@@ -1,12 +1,13 @@
 import useNav from "../../hooks/useNav";
 
 type Props = {
+  startContent?: React.ReactNode;
   text: string;
   route?: string;
   blankRoute?: string;
 };
 
-const Button = ({ text, route = "/", blankRoute }: Props) => {
+const Button = ({ text, route = "/", blankRoute, startContent }: Props) => {
   const { handleClick } = useNav(route);
   return (
     <a
@@ -19,6 +20,7 @@ const Button = ({ text, route = "/", blankRoute }: Props) => {
         transition-all duration-200 w-fit cursor-pointer text-pblack dark:text-pwhite text-[14px]
         flex items-center gap-2 text-center"
     >
+      {startContent}
       {text}
     </a>
   );

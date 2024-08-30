@@ -23,7 +23,6 @@ const Installation = () => {
           <h2 className="mt-3 text-xl font-bold">Requirements</h2>
           <ul className="list-disc ml-5">
             <li className="text-sm mt-2">React 18 or later</li>
-            <li className="text-sm mt-2">React 18 or later</li>
           </ul>
 
           <div className="h-[0.5px] bg-black/30 dark:bg-pwhite/30 my-5"></div>

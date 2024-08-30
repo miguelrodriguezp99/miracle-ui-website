@@ -3,6 +3,10 @@ import { Tab, Tabs } from "@miracle-ui/react";
 import { CopyBlock, tomorrowNight } from "react-code-blocks";
 import Breadcrumb from "../components/breadcrumb/Breadcrumb";
 import { Link } from "react-router-dom";
+import Button from "../components/button/Button";
+import Storybook from "../icons/StorybookIcon";
+import NPM from "../icons/NpmIcon";
+import Github from "../icons/GithubIcon";
 
 type Example = {
   title: string;
@@ -14,18 +18,22 @@ type Props = {
   title: string;
   description: string;
   examples: Example[];
-  storybook?: string;
   props?: string;
   customWarning?: string;
+  storybook?: string;
+  npm?: string;
+  sourceCode?: string;
 };
 
 export default function ComponentLayout({
   title,
   description,
   examples,
-  storybook,
   props = "min-h-[350px]",
   customWarning,
+  storybook,
+  npm,
+  sourceCode,
 }: Props) {
   return (
     <>
@@ -37,17 +45,22 @@ export default function ComponentLayout({
             <p className="text-3xl font-bold">{title}</p>
             <p className="text-base">{description}</p>
           </div>
-          <div className="space-x-2 pt-4">
-            <button>Docs</button>
-            <button>API Reference</button>
-            <a
-              href={storybook}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer"
-            >
-              Storybook
-            </a>
+          <div className="space-x-2 pt-4 flex">
+            <Button
+              text="Storybook"
+              startContent={<Storybook />}
+              blankRoute={storybook}
+            />
+            <Button
+              startContent={<NPM />}
+              text={`@miracle-ui/${title.toLowerCase().replace(/\s/g, "-")}`}
+              route={npm}
+            />
+            <Button
+              startContent={<Github />}
+              text={"Source"}
+              route={sourceCode}
+            />
           </div>
 
           <div className="h-[0.5px] bg-black/30 dark:bg-pwhite/30 my-8"></div>

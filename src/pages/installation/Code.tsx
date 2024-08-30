@@ -1,5 +1,11 @@
 const codeblock = {
   primaryCode: `
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
@@ -11,6 +17,7 @@ const codeblock = {
   --color-faded-1: #3e3e43;
   --custom-hover-color: initial;
   --custom-placeholder-color: initial;
+  --radius-none: 0px;
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 14px;
@@ -25,8 +32,6 @@ const codeblock = {
 
   --active-color: #09090b;
   --inactive-color: #71717a;
-
-  scroll-behavior: smooth;
 
   scrollbar-width: auto;
   scrollbar-color: #4b5563 #ffffff;
@@ -143,9 +148,10 @@ const codeblock = {
 
 .light {
   background-color: transparent;
-  color: var(--color);
   border: none;
+  color: var(--color);
 }
+
 .flat {
   background-color: var(--color-4);
   color: var(--color);
@@ -160,7 +166,9 @@ const codeblock = {
 
 .shadow {
   background-color: var(--color);
-  box-shadow: 0 10px 15px -3px var(--color-2), 0 4px 6px -4px var(--color-2);
+  box-shadow:
+    0 10px 15px -3px var(--color-2),
+    0 4px 6px -4px var(--color-2);
   border: none;
 }
 
