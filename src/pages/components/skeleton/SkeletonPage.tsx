@@ -6,8 +6,8 @@ import codeblock from "./Code";
 export const SkeletonPage = () => {
   return (
     <ComponentLayout
-      title="Clipboard"
-      description="Clipboard is a React component that allows you to copy text to the clipboard."
+      title="Skeleton"
+      description="Skeleton is used to indicate an undetermined wait period or visually represent the duration of a process."
       storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-skeleton--default"
       examples={[
         {

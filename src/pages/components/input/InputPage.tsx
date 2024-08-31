@@ -5,8 +5,8 @@ import codeblock from "./Code";
 export const InputPage = () => {
   return (
     <ComponentLayout
-      title="Divider"
-      description="Divider is used to indicate an undetermined wait period or visually represent the duration of a process."
+      title="Input"
+      description="Input is a React component that allows you to input text."
       storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-input--default"
       examples={[
         {
