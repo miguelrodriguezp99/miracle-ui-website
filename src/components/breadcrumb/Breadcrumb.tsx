@@ -1,11 +1,12 @@
 type Props = {
+  previus?: string;
   title: string;
 };
 
-const Breadcrumb = ({ title }: Props) => {
+const Breadcrumb = ({ previus = "Docs", title }: Props) => {
   return (
     <div className="text-pblack dark:text-pwhite flex items-center gap-1">
-      <p className="text-pblack/60 dark:text-pwhite/60">Docs</p>
+      <p className="text-pblack/60 dark:text-pwhite/60">{previus}</p>
       <svg
         width="15"
         height="15"

@@ -38,7 +38,7 @@ export default function ComponentLayout({
   return (
     <>
       <div className="text-black dark:text-pwhite relative">
-        <Breadcrumb title={title} />
+        <Breadcrumb previus="Components" title={title} />
 
         <div className="mt-4">
           <div className="space-y-2">

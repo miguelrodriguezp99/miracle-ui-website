@@ -1,14 +1,12 @@
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import ContentAside from "../../components/aside/ContentAside";
 import BreadcrumbIcon from "../../icons/BreadcrumbIcon";
-import useNav from "../../hooks/useNav";
 import codeblock from "./Code";
 import { CopyBlock, tomorrowNight } from "react-code-blocks";
 import { Clipboard } from "@miracle-ui/clipboard";
+import Button from "../../components/button/Button";
 
 const Installation = () => {
-  const { handleClick } = useNav("/docs/darkmode");
-
   return (
     <>
       <div>
@@ -215,7 +213,7 @@ const Installation = () => {
         </section>
 
         <div className="flex flex-row items-end justify-end mt-5">
-          <button
+          {/* <button
             onClick={() => handleClick()}
             className="border border-1 border-pblack/10 dark:border-pwhite/10 
             rounded-[4px] px-4 py-1.5 transition-all duration-200
@@ -227,7 +225,12 @@ const Installation = () => {
               </p>
               <BreadcrumbIcon />
             </div>
-          </button>
+          </button> */}
+          <Button
+            text="Dark Mode"
+            route="/docs/darkmode"
+            endContent={<BreadcrumbIcon />}
+          />
         </div>
       </div>
 

@@ -2,11 +2,9 @@ import { Accordion, AccordionItem } from "@miracle-ui/react";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import ContentAside from "../../components/aside/ContentAside";
 import BreadcrumbIcon from "../../icons/BreadcrumbIcon";
-import useNav from "../../hooks/useNav";
+import Button from "../../components/button/Button";
 
 const Introduction = () => {
-  const { handleClick } = useNav("/docs/installation");
-
   return (
     <>
       <div>
@@ -68,7 +66,7 @@ const Introduction = () => {
         </section>
 
         <div className="flex flex-row items-end justify-end mt-5">
-          <button
+          {/* <button
             onClick={handleClick}
             className="border border-1 border-pblack/10 dark:border-pwhite/10 
             rounded-[4px] px-4 py-1.5 transition-all duration-200
@@ -80,7 +78,12 @@ const Introduction = () => {
               </p>
               <BreadcrumbIcon />
             </div>
-          </button>
+          </button> */}
+          <Button
+            text="Installation"
+            route="/docs/installation"
+            endContent={<BreadcrumbIcon />}
+          />
         </div>
       </div>
 

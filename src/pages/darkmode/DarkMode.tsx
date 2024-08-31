@@ -1,15 +1,13 @@
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import ContentAside from "../../components/aside/ContentAside";
 import BreadcrumbIcon from "../../icons/BreadcrumbIcon";
-import useNav from "../../hooks/useNav";
 import { Tab, Tabs } from "@miracle-ui/react";
 import { CopyBlock, tomorrowNight } from "react-code-blocks";
 import ThemeToggle from "../../components/themeToggle/ThemeToggle";
 import codeblock from "./Code";
+import Button from "../../components/button/Button";
 
 const DarkMode = () => {
-  const { handleClick } = useNav("/docs/about");
-
   return (
     <>
       <div>
@@ -143,17 +141,11 @@ const DarkMode = () => {
         </section>
 
         <div className="flex flex-row items-end justify-end mt-5">
-          <button
-            onClick={handleClick}
-            className="border border-1 border-pblack/10 dark:border-pwhite/10 
-            rounded-[4px] px-4 py-1.5 transition-all duration-200
-          hover:bg-pblack/10 dark:hover:bg-pwhite/20"
-          >
-            <div className="flex items-center gap-2 text-center">
-              <p className="text-pblack dark:text-pwhite text-[14px]">About</p>
-              <BreadcrumbIcon />
-            </div>
-          </button>
+          <Button
+            text="About"
+            route="/docs/about"
+            endContent={<BreadcrumbIcon />}
+          />
         </div>
       </div>
 
