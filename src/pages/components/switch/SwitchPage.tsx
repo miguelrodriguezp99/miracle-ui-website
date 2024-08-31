@@ -12,6 +12,7 @@ export const SwitchPage = () => {
       title="Switch"
       description="A Switch is a component that allows the user to toggle between two states."
       customWarning="If you want to use multiple switches, you need to add a unique id to each one."
+      storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-switch--default"
       examples={[
         {
           title: "Usage",

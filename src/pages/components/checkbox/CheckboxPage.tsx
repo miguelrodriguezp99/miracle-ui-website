@@ -8,6 +8,7 @@ export const CheckboxPage = () => {
     <ComponentLayout
       title="Checkbox"
       description="Checkboxes allow users to select multiple items from a list of individual items, or to mark one individual item as selected."
+      storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-checkbox--default"
       examples={[
         {
           title: "Usage",

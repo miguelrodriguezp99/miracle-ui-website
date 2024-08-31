@@ -26,6 +26,7 @@ export const TabsPage = () => {
     <ComponentLayout
       title="Tabs"
       description="Tabs are used to organize content into different sections."
+      storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-tabs--default"
       examples={[
         {
           title: "Usage",

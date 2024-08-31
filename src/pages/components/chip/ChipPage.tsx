@@ -8,6 +8,7 @@ export const ChipPage = () => {
     <ComponentLayout
       title="Chip"
       description="A Chip is a small block of essential information that represent an input, attribute, or action."
+      storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-chip--default"
       examples={[
         {
           title: "Usage",

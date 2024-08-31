@@ -7,6 +7,7 @@ export const ResizerPage = () => {
     <ComponentLayout
       title="Reizer"
       description="Resizer is a component that allows you to resize the panes in a container."
+      storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-resizer--default"
       examples={[
         {
           title: "Usage",

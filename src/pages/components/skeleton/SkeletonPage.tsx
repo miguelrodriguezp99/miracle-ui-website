@@ -8,6 +8,7 @@ export const SkeletonPage = () => {
     <ComponentLayout
       title="Clipboard"
       description="Clipboard is a React component that allows you to copy text to the clipboard."
+      storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-skeleton--default"
       examples={[
         {
           title: "Usage",

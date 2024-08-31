@@ -9,6 +9,7 @@ export const ButtonPage = () => {
     <ComponentLayout
       title="Button"
       description="Buttons allow users to perform actions and choose with a single tap."
+      storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-button--primary"
       examples={[
         {
           title: "Usage",

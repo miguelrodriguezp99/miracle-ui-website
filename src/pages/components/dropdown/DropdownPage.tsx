@@ -47,6 +47,7 @@ export const DropdownPage = () => {
       title="Dropdown"
       description="Dropdown is a React component that allows you to create a dropdown menu."
       props="min-h-[400px]"
+      storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-dropdown--primary"
       examples={[
         {
           title: "Usage",

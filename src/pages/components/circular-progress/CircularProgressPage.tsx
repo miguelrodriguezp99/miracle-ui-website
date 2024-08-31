@@ -7,6 +7,7 @@ export const CircularProgressPage = () => {
     <ComponentLayout
       title="Circular Progress"
       description="Circular progress indicators are utilized to indicate an undetermined wait period or visually represent the duration of a process."
+      storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-circularprogress--default"
       examples={[
         {
           title: "Usage",

@@ -53,6 +53,7 @@ export const ModalPage = () => {
     <ComponentLayout
       title="Modal"
       description="Modal is a dialog box or popup, displayed over the current page."
+      storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-modal--primary"
       examples={[
         {
           title: "Usage",

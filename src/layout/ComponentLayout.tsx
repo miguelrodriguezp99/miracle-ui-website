@@ -53,10 +53,14 @@ export default function ComponentLayout({
             />
             <Button
               startContent={<NPM />}
+              blankRoute={`https://www.npmjs.com/package/@miracle-ui/${title
+                .toLowerCase()
+                .replace(/\s/g, "-")}`}
               text={`@miracle-ui/${title.toLowerCase().replace(/\s/g, "-")}`}
               route={npm}
             />
             <Button
+              blankRoute="https://github.com/miguelrodriguezp99/miracle-ui/tree/main/packages/components"
               startContent={<Github />}
               text={"Source"}
               route={sourceCode}

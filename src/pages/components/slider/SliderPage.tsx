@@ -10,6 +10,7 @@ export const SliderPage = () => {
       title="Slider"
       description="Slider is used to indicate an undetermined wait period or visually represent the duration of a process."
       customWarning="If you have two or more sliders on the same page, make sure to give them unique names."
+      storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-slider--primary"
       examples={[
         {
           title: "Usage",

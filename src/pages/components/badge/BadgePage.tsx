@@ -7,6 +7,7 @@ export const BadgePage = () => {
     <ComponentLayout
       title="Badge"
       description="Badges are used as a small numerical value or status descriptor for UI elements."
+      storybook="https://main--66685fb204b9df24515e1b9b.chromatic.com/?path=/story/components-badge--default"
       examples={[
         {
           title: "Usage",
