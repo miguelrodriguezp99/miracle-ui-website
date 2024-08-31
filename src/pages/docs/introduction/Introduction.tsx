@@ -1,8 +1,8 @@
 import { Accordion, AccordionItem } from "@miracle-ui/react";
-import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
-import ContentAside from "../../components/aside/ContentAside";
-import BreadcrumbIcon from "../../icons/BreadcrumbIcon";
-import Button from "../../components/button/Button";
+import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
+import ContentAside from "../../../components/aside/ContentAside";
+import BreadcrumbIcon from "../../../icons/BreadcrumbIcon";
+import Button from "../../../components/button/Button";
 
 const Introduction = () => {
   return (

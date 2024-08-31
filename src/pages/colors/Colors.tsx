@@ -5,7 +5,7 @@ import { colors } from "../../lib/colorsList";
 
 export default function Colors() {
   return (
-    <div className="max-w-[1400px] mx-auto pb-20 ">
+    <div className="max-w-[1400px] mx-auto pb-20 px-8">
       <section className="mt-12 ">
         <div className="text-pblack dark:text-pwhite">
           <h1 className=" text-4xl font-bold">Miracle UI Colors</h1>

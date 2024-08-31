@@ -1,7 +1,7 @@
-import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
-import ContentAside from "../../components/aside/ContentAside";
-import BreadcrumbIcon from "../../icons/BreadcrumbIcon";
-import useNav from "../../hooks/useNav";
+import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
+import ContentAside from "../../../components/aside/ContentAside";
+import BreadcrumbIcon from "../../../icons/BreadcrumbIcon";
+import useNav from "../../../hooks/useNav";
 
 const About = () => {
   const { handleClick } = useNav("/docs/installation");

@@ -1,10 +1,10 @@
-import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
-import ContentAside from "../../components/aside/ContentAside";
-import BreadcrumbIcon from "../../icons/BreadcrumbIcon";
+import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
+import ContentAside from "../../../components/aside/ContentAside";
+import BreadcrumbIcon from "../../../icons/BreadcrumbIcon";
 import codeblock from "./Code";
 import { CopyBlock, tomorrowNight } from "react-code-blocks";
 import { Clipboard } from "@miracle-ui/clipboard";
-import Button from "../../components/button/Button";
+import Button from "../../../components/button/Button";
 
 const Installation = () => {
   return (

@@ -6,7 +6,7 @@ export default function HomeLayout() {
   return (
     <div className="font-geist text-sm">
       <Navbar />
-      <div className="bg-white dark:bg-background font-geist text-sm h-full ">
+      <div className="bg-white dark:bg-background font-geist text-sm h-full overflow-x-hidden">
         <Outlet />
         <Footer />
       </div>

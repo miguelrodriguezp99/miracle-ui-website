@@ -1,11 +1,11 @@
-import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
-import ContentAside from "../../components/aside/ContentAside";
-import BreadcrumbIcon from "../../icons/BreadcrumbIcon";
+import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
+import ContentAside from "../../../components/aside/ContentAside";
+import BreadcrumbIcon from "../../../icons/BreadcrumbIcon";
 import { Tab, Tabs } from "@miracle-ui/react";
 import { CopyBlock, tomorrowNight } from "react-code-blocks";
-import ThemeToggle from "../../components/themeToggle/ThemeToggle";
+import ThemeToggle from "../../../components/themeToggle/ThemeToggle";
 import codeblock from "./Code";
-import Button from "../../components/button/Button";
+import Button from "../../../components/button/Button";
 
 const DarkMode = () => {
   return (

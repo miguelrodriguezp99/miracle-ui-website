@@ -8,7 +8,7 @@ const DarkExample = () => {
     <>
       {/* <div className="hidden lg:flex absolute top-[40%] left-[70%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-2xl radial"></div> */}
 
-      <div className="h-auto bg-white dark:bg-pblack relative z-40 pb-32">
+      <div className="h-auto bg-white dark:bg-pblack relative z-40 pb-20 sm:pb-32">
         <div className="absolute top-[25%] left-[55%] rounded-full min-h-80 min-w-80 bg-pyellow/50 blur-[120px] radial"></div>
 
         <section

@@ -2,15 +2,15 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import { components } from "./lib/utils";
 import Demo from "./pages/test/Testing";
-import Introduction from "./pages/introduction/Introduction";
-import Installation from "./pages/installation/Installation";
-import About from "./pages/about/About";
+import Introduction from "./pages/docs/introduction/Introduction";
+import Installation from "./pages/docs/installation/Installation";
 import Layout from "./layout/Layout";
 import HomeLayout from "./layout/HomeLayout";
 import Colors from "./pages/colors/Colors";
 import ScrollToTop from "./hooks/useScrollToTop";
 import { Analytics } from "@vercel/analytics/react";
-import DarkMode from "./pages/darkmode/DarkMode";
+import DarkMode from "./pages/docs/darkmode/DarkMode";
+import About from "./pages/docs/about/About";
 
 function App() {
   const componentArray = Object.values(components);
