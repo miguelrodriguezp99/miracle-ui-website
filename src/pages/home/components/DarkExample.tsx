@@ -74,7 +74,7 @@ const DarkExample = () => {
                 scrollbarColor: "#4B5563 #1A202C",
                 paddingLeft: "1rem",
               }}
-              text={codeblock.usage}
+              text={codeblock.darkmode}
               language="jsx"
               showLineNumbers={false}
               theme={tomorrowNight}

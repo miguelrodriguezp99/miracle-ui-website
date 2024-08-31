@@ -30,6 +30,33 @@ return (
 
 export default Demo;
   `,
+  darkmode: `
+import { Accordion, AccordionItem } from "@miracle-ui/accordion";
+  
+const Demo = () => {
+  return (
+    <Accordion initialOpenIndexes={[0]}>
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="18px"
+        contentFontSize="16px"
+      />
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="18px"
+        contentFontSize="16px"
+      />
+      <AccordionItem
+        title="Accordion Item 1"
+        titleFontSize="18px"
+        contentFontSize="16px"
+      />
+    </Accordion>
+  );
+};
+
+export default Demo;
+    `,
 };
 
 export default codeblock;
