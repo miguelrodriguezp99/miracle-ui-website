@@ -1,6 +1,6 @@
 const codeblock = {
   usage: `
-import { Accordion, AccordionItem } from "@miracle-ui/react";
+import { Card, CardProduct } from "@miracle-ui/react";
 
 const Demo = () => {
 return (

@@ -26,17 +26,17 @@ const CodeExample = () => {
             <div className="max-h-min product mt-10 flex gap-4 flex-wrap w-full justify-center md:justify-center 2xl:justify-start">
               <Card cardWidth="none" isClickable>
                 <CardProduct
-                  title="Orange"
+                  title="Cherries"
                   price="$10.00"
-                  imgRoute="https://nextui.org/images/fruit-4.jpeg"
+                  imgRoute="https://images.unsplash.com/photo-1467887633195-23e82423e499?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 />
               </Card>
               <div className="hidden 2xl:flex">
                 <Card cardWidth="none" isClickable>
                   <CardProduct
-                    title="Strawberry"
+                    title="Blueberries"
                     price="$10.00"
-                    imgRoute="https://nextui.org/images/fruit-3.jpeg"
+                    imgRoute="https://images.unsplash.com/photo-1616203095392-7b3afa9ca518?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   />
                 </Card>
               </div>
@@ -45,7 +45,7 @@ const CodeExample = () => {
                   <CardProduct
                     title="Strawberry"
                     price="$10.00"
-                    imgRoute="https://nextui.org/images/fruit-8.jpeg"
+                    imgRoute="https://images.unsplash.com/photo-1587063666834-1ef04db9ce08?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   />
                 </Card>
               </div>
