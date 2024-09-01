@@ -16,7 +16,10 @@ const Hero = () => {
 
       <div className="flex items-center w-full justify-center mt-10 gap-5">
         <Button text="Get Started" route="/docs/installation" />
-        <Button text="Github" blankRoute="https://github.com" />
+        <Button
+          text="Github"
+          blankRoute="https://github.com/miguelrodriguezp99/miracle-ui"
+        />
       </div>
     </div>
   );
