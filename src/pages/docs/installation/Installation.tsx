@@ -40,7 +40,7 @@ const Installation = () => {
               customBackgroundColor="#1d1f21"
               customTextSize="14px"
             >
-              npm install -g miracle-ui/cli
+              npm install -g miracle-ui-cli
             </Clipboard>
           </div>
 
