@@ -78,7 +78,7 @@ export default function Sun({ props }: SunProps) {
 `,
 
   setDarkMode: `
-document.documentElement.classList.remove("dark");
+document.documentElement.classList.add("dark");
 `,
 };
 
