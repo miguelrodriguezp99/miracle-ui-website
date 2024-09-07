@@ -45,7 +45,7 @@ export default function ComponentLayout({
             <p className="text-3xl font-bold">{title}</p>
             <p className="text-base">{description}</p>
           </div>
-          <div className="space-x-2 pt-4 flex">
+          <div className="gap-3 pt-4 flex flex-wrap">
             <Button
               text="Storybook"
               startContent={<Storybook />}
