@@ -90,6 +90,10 @@
   scrollbar-color: var(--scrollbar1) var(--scrollbar2);
 }
 
+.left-aside {
+  scrollbar-color: var(--scrollbarsheet1) var(--bgcolor);
+}
+
 body {
   background-color: var(--bgcolor);
 }

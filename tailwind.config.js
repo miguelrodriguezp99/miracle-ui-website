@@ -8,7 +8,7 @@ export default {
         geist: ["Geist"],
       },
       colors: {
-        background: "#09090b",
+        background: "#09090B",
         pwhite: "#FAFAFA",
         swhite: "#A1A1AA",
         pblack: "#09090B",
